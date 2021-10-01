@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>PageDocument</title>
+</head>
+<body>
+    <header id="top">
+        <nav class="main-nav">
+            <div class="main-burger">
+                <div class="burger">
+                    <div class="burger__line"></div>
+                </div>
+            </div>
+            <ul class="main-menu row">
+                    <li class="menu-item logo">Logo</li>
+                    <li class="menu-item">Home</li>
+                    <li class="menu-item">About</li>
+                    <li class="menu-item">Contact</li>
+            </ul>
+        </nav>
+<!-- hero 
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+-->        
+        <div class="hero-img">
+            <div class="hero-text">
+                <h1 style="font-size:50px;background: #010809;padding: 2px 10px;border-radius: 2.5px;">I am hero html</h1>
+                <p>hero HTML estructure</p>
+                <button>Click-Me</button>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+
+<section id="cards">
+            <div class="content-container wrap row">  
+                        
+                <!--Cards
+                https://www.w3schools.com/howto/howto_css_cards.asp
+                -->                
+                            <div class="card">
+                                <div class="card-img"></div>
+                                <div class="card-content">
+                                    <h1 class="card-header">Card Title</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"></div>
+                                <div class="card-content">
+                                    <h1 class="card-header">Card Title</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img"></div>
+                                <div class="card-content">
+                                    <h1 class="card-header">Card Title</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+        
+<!--Media Object
+https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp
+-->
+
+<section class="media-objects">
+    <div class="container row">
+        <div class="media content-container">
+            <div class="media-img"></div>
+            <div class="media-content">
+                <h1 class="media-header">Media-title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="media-objects">
+    <div class="container row">
+        <div class="media content-container reverse">
+            <div class="media-img"></div>
+            <div class="media-content">
+                <h1 class="media-header">Media-title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="media-objects">
+    <div class="container row">
+        <div class="media content-container">
+            <div class="media-img"></div>
+            <div class="media-content">
+                <h1 class="media-header">Media-title</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="recomend-sites">
+    <div class="content-container row">
+        <h2 style='flex: 100%;'>Paginas Recomendadas</h2>    
+            <div class="site">
+                <div class="site_ico"></div>
+                <div class="site_content">
+                    <h2 style="text-align: center;">whatever</h2>
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_ico"></div>
+                <div class="site_content">
+                    <h2 style="text-align: center;">whatever</h2>
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_ico"></div>
+                <div class="site_content">
+                    <h2 style="text-align: center;">whatever</h2>
+                </div>
+            </div>
+            <div class="site">
+                <div class="site_ico"></div>
+                <div class="site_content">
+                    <h2 style="text-align: center;">whatever</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sucursales" style="background-color: coral;margin: 0;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2622075201093!2d-58.39512598505162!3d-34.62281356601516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb204a2b9147%3A0xe8cbbd3c023b3e34!2sAvenida%20San%20Juan%20%26%20Combate%20de%20los%20Pozos%2C%20C1229%20CABA!5e0!3m2!1ses!2sar!4v1633022286663!5m2!1ses!2sar" width="100%" height="378px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+</main>
+
+<!--Footer 
+https://programacion.net/articulo/como_hacer_un_footer_fijo_sin_morir_en_el_intento_1669
+
+https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341
+-->
+    
+    <footer class="page-footer">
+        <div class="content-container row">
+        <div class="contact-area">
+            <div class="contact-header">
+                <h2>Contatc Info</h2>
+                <p style="font-size: 14px;color: #aaa;line-height: 24px; margin: 0 0 20px;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
+                </p>
+            </div>
+
+            <div class="contact-body">
+                <ul class="contact-main">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fab fa-whatsapp' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Whatsapps: 15111-111</div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fab fa-github' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Github: dank01az</div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fa fa-twitter' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Twiter: @little_turtle</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2 class="title">Contact Form</h2>
+            <form action="">
+                <input type="text" name="firstname" placeholder="Ingrese su nombre..." >
+                <input type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
+                <textarea name="Coments" id="" cols="48" rows="10" style="width: 100%;"></textarea>
+                <br>
+                <input type="submit" value="enviar" style="width: 100%;">
+            </form>
+        </div>
+    </div>
+        <div class="nav-footer" style="background-color: black;">
+                <div class="main-menu row" style="padding: 0;">
+                    <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
+                        <li class="menu-item">Home</li>
+                        <li class="menu-item">About</li>
+                        <li class="menu-item">Contact</li>
+                    </ul>
+                    <ul class="social-nav">
+                        <li class="menu-item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+                    </ul>
+                </div>
+        </div>
+
+    </footer>
+    <div class="back-top" onclick="back_top()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+</html>
+
+
+
+

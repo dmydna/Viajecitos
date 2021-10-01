@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --content : #efefef;
+    --none: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.logo{
+    margin-right: auto;
+}
+.menu-item,.logo{
+    display: inline;
+    padding: 0 10px 0;
+    cursor: pointer;
+}
+.hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photographer.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    padding: 25px 20px;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 0 10px;
+
+}
+
+.row{
+    max-width: 1100px;
+    margin: 0 auto 0;
+}
+
+.card {
+    width: 25vw;
+    height: 400px;
+    border: .5px solid var(--content);
+    text-align: center;
+    border-radius: 3.5px;
+    flex: 25%;
+    margin: 5px;
+}
+.card-img{
+    height: 50%;
+    background-color: var(--content);
+    background-image: url(../img/pexels-ron-lach-8440066.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.media {
+    height: 500px;
+    border: .5px solid var(--content);
+    flex: 100%;
+    border-radius: 3.5px;    
+    padding: 0;
+}
+.media:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.media-img{
+    background-color: var(--content);
+    background-image: url(../img/pexels-fauxels-3184418.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.media-img, .media-content{
+    flex: 50%;
+}
+.media-content{
+    padding: 20px;
+}
+
+
+footer{
+    background-color: #20222d;
+    color: white;
+    padding: 30px 0;
+}
+footer .main-menu{
+    justify-content: space-between;
+}
+
+
+.social-nav .menu-item a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.recomend-sites{
+    background-color: var(--content);
+    padding: 5vh 0 20vh;
+}
+.site{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border:.5px solid var(--content);
+    border-radius: 5px;
+    color: gray;
+}
+
+.site_ico{
+    height: 70%;
+    background-image: url(../img/pexels-ron-lach-8440066.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    margin: 30px 0 0;
+}
+
+.contact-area{
+    padding: 10px 0;
+    flex: 1;
+    margin: 0;
+    display: inline-block;
+   transform: scale(.88);
+
+}
+.contact-item{
+    list-style: none;
+}
+.contact-item div{
+    display: inline-block;
+    padding: 10px;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    color: black;
+}
+.contact-icon{
+   
+    background-color: white;
+    border-radius: 2.5px;
+    font-size: 21px;
+}
+
+.contact-form{
+    flex: 1;
+    transform: scale(.88);
+}
+
+.item-desc{
+    font-size: 14px;
+    color: #aaa;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+footer textarea{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 3.5px;
+}
+footer input{
+    width: calc(50% - 5px);
+    background-color: transparent;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border-radius: 3.5px;
+}
+footer input[type='submit']{
+    background-color: rgba(0, 128, 0, 0.432);
+    color: white;
+    border:0;
+    border-radius: 3.5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.media p, .card{
+    color: #5a5a5a;
+}
+
+.back-top{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    color: white;
+    background-color: tomato;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.back-top i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*Burger Buton Temp*/
+
+.burger {
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    transform: scale(0.4);  
+    display: none;
+    z-index: 12;
+    right: 0;
+    top: -7px;
+  }
+  .burger::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    z-index: -1;
+    transform: scale(100);
+    display: var(--none);
+  }
+
+
+  .burger__line::before,
+  .burger__line::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .burger__line::before {
+    top: 0;
+  }
+  
+  .burger__line::after {
+    top: calc(100% - 10px);
+  }
+  
+  .burger__line,
+  .burger__line::before,
+  .burger__line::after {
+    transition: 0.25s;
+    background-color: rgb(0, 0, 0);
+    height: 10px;
+    width: 100%;
+    display: block;
+  }
+
+
+
+  
+  @media screen and (max-width: 780px){
+    .burger{
+        display: flex;
+    }
+    .menu-item {
+        display: none;
+    }
+    .logo{
+        display: initial;
+    }
+}
+
+  
+@media screen and (max-width: 480px){
+    .hero-img{
+        height: calc(100vh - 58px)
+    }
+    .burger{
+        display: flex;
+    }
+}
+
