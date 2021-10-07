@@ -2,12 +2,15 @@
 
 
 let burger = document.querySelector(".burger"),
-list_nav = document.querySelector("#nav_menu");
+    list_nav = document.querySelector("#nav_menu");
+
 
 burger.addEventListener("click", function() {
 list_nav.classList.toggle('active');
 });
 
+
+/* btn back-top */
 
 var back_top_btn = document.querySelector(".back-top");
 
@@ -43,10 +46,57 @@ function navbar_scrollUp() {
 }
 /* nav-color */
 
-var HeaderElm = document.querySelector('header');
-var headerHeight = HeaderElm.clientHeight;
-var altoDeScroll = document.documentElement.scrollTop;
-//var currenP = 0 ;
+let header_nav = document.querySelector('.header_nav'),
+    headerHeight = header_nav.clientHeight,
+    altoDeScroll = document.documentElement.scrollTop;
+    header_nav.classList.add("n_fixed")
+    
+function navbarColor(){
+     let scroll_top = document.documentElement.scrollTop;
+    if ( scroll_top > 0) {
+        header_nav.classList.add("nav_js")
+      }
+    else{  
+        header_nav.classList.remove("nav_js")
+    }
+}
+
+
+/** V2
+ * 
+ * 
+ * 
+ *  var header_nav = document.querySelector('.header_nav');
+    var headerHeight = header_nav.clientHeight;
+    var altoDeScroll = document.documentElement.scrollTop;
+ * 
+ * function navbarColor(){
+    //var currenP = document.documentElement.clientHeight;
+     var scroll_top = document.documentElement.scrollTop;
+    if ( scroll_top > 0) {
+        header_nav.style.backgroundColor = "white";
+        header_nav.style.color = 'black';
+        header_nav.style.boxShadow = '0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 2%)';
+        document.querySelector(".main-nav ").style.fontWeight = 'bolder';
+        //console.log('backgroundColor : white');
+      } else {
+        header_nav.style.backgroundColor = "transparent";
+        header_nav.style.color = "white";
+        header_nav.style.boxShadow = 'none';
+        document.querySelector(".main-nav ").style.fontWeight = '100';
+        //console.log('backgroundColor : transparente')
+      }
+     //headerHeight = currentScrollPos;
+}
+ * 
+ * 
+ * 
+ */
+
+
+/* copia v1
+
+
 
 function navbarColor(){
     //var currenP = document.documentElement.clientHeight;
@@ -68,3 +118,5 @@ function navbarColor(){
 }
 
 
+
+*/

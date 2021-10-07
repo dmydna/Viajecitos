@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--<script src="js/script.js" defer></script>
+    -->
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="form/bootstrap.min.css">
+    <script src="form/bootstrap.min.css"></script>
+    <script src="form/jquery-3.2.1.slim.min.js"></script>
+    <script src="form/popper.min.js"></script>
+    <style>
+        .rowfix{
+            max-width: 1100px;
+            margin: 0 auto 0;
+        }
+        .header_nav{
+            color: black;
+            top: 0;
+            position: initial;
+            z-index: 10;
+            width: 100%;
+            transition: all 1s;
+            background: white;
+        }
+        .main-nav{
+            display: flex;
+            font-weight: bold;
+        }
+    </style>
+    <title>PageDocument</title>
+</head>
+<body>
+    <header class='' id="top">
+  
+  <div class="header_nav">   
+        <nav class="main-nav rowfix">
+            <div class="logo"><a href="./index.html">Logo</a></div>
+            <ul class="main-menu" id="nav_menu">
+                    <li class="menu-item">Home</li>
+                    <li class="menu-item">About</li>
+                    <li class="menu-item">Contact</li>
+            </ul>
+            <div class="burger"><div class="burger__line"></div></div>
+        </nav>
+    </div>       
+<!-- hero 
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+-->        
+        <div class="hero-img" style='height: 30vh;'>
+            <div class="hero-text">
+                <h1 class='hero-title' style="">Contacto</h1>
+            </div>
+        </div>
+    </header>
+<main class="container">
+    <form hidden action="">
+        <div class="form-group">
+            <label for="InputEmail">Your Name</label>
+            <input type="email" class="form-control" id="InputEmail">
+            <small class="form-text- text-muted">Tu correo electronico es importante!</small>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Your Email</label>
+            <input type="password" class="form-control" id='inputPassword'>
+            <small class="form-text text-muted">Tu password es Importante</small>
+            <br>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-checj-input"> Recordarme
+                </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Acceder</button>
+        </div>
+    </form>
+
+
+    
+    <form>
+        <div class="form-group row ml-4">
+            <label for="InputEmail">Your Name</label>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="form-group row ml-4">
+            <label for="InputEmail">Your Email</label>
+            <div class="col">
+            <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group row ml-2">
+                <label for="exampleFormControlTextarea1" >Comentarios
+                </label>
+                <div class="col">
+            <textarea class="form-control" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="Commets"></textarea>
+        </div>
+          </div>
+      </form>
+
+
+</main>
+
+<!--Footer 
+https://programacion.net/articulo/como_hacer_un_footer_fijo_sin_morir_en_el_intento_1669
+
+https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341
+-->
+    
+    <footer class="page-footer">
+        <div class="content-container rowfix">
+        <div hidden class="contact-area">
+            <div class="contact-header">
+                <h2>Contatc Info</h2>
+                <p style="font-size: 14px;color: #aaa;line-height: 24px; margin: 0 0 20px;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
+                </p>
+            </div>
+
+            <div class="contact-body">
+                <ul class="contact-main">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fab fa-whatsapp' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Whatsapps: 15111-111</div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fab fa-github' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Github: dank01az</div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <a class='fa fa-twitter' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item-desc">Twiter: @little_turtle</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div hidden class="contact-form">
+            <h2 class="title">Contact Form</h2>
+            <form action="">
+                <input type="text" name="firstname" placeholder="Ingrese su nombre..." >
+                <input type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
+                <textarea name="Coments" id="" cols="48" rows="10" style="width: 100%;"></textarea>
+                <br>
+                <input type="submit" value="enviar" style="width: 100%;">
+            </form>
+        </div>
+    </div>
+        <div class="nav-footer" style="background-color: black;">
+                <div class="main-menu rowfix" style="padding: 0;">
+                    <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
+                        <li class="menu-item">Home</li>
+                        <li class="menu-item">About</li>
+                        <li class="menu-item">Contact</li>
+                    </ul>
+                    <ul class="social-nav" style="margin-bottom: 50px;padding: 20px 0;">
+                        <li class="menu-item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
+                        <li class="menu-item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+                    </ul>
+                </div>
+        </div>
+
+    </footer>
+    <div class="back-top" onclick="back_top()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+</html>
+
+
+
+
