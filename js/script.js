@@ -62,8 +62,6 @@ function navbarColor(){
         header_nav.classList.remove("nav_js")
     }
 }
-
-
 /** V2
  * 
  * 

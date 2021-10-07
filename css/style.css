@@ -33,8 +33,8 @@ body{
     font-weight: 100;
     list-style: none;
     margin: 0;
-
 }
+
 .main-menu{
     display: flex;
     flex-wrap: wrap;
