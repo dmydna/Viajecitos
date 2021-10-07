@@ -36,6 +36,30 @@
             display: flex;
             font-weight: bold;
         }
+        footer{
+            background-color: unset;
+            padding: 0;
+            border:0;
+        }
+        main{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .hero-img{
+            height: 30vh;
+            height: 100vh;
+
+        }
+        .hero-text{
+            display: none;
+        }
+        .burger__line, .burger__line::before, .burger__line::after{
+            background-color: black;
+        }
     </style>
     <title>PageDocument</title>
 </head>
@@ -56,7 +80,7 @@
 <!-- hero 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 -->        
-        <div class="hero-img" style='height: 30vh;'>
+        <div class="hero-img">
             <div class="hero-text">
                 <h1 class='hero-title' style="">Contacto</h1>
             </div>
@@ -64,7 +88,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
     </header>
 <main class="container">
     <form hidden action="">
-        <div class="form-group">
+        <div class="form-group row">
             <label for="InputEmail">Your Name</label>
             <input type="email" class="form-control" id="InputEmail">
             <small class="form-text- text-muted">Tu correo electronico es importante!</small>
@@ -84,8 +108,9 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
     </form>
 
 
-    
+    <div class="container pt-5 pb-5">
     <form>
+        <h2 class="pb-5 text-center">Contactanos</h2>
         <div class="form-group row ml-4">
             <label for="InputEmail">Your Name</label>
           <div class="col">
@@ -109,6 +134,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
         </div>
           </div>
       </form>
+    </div>
 
 
 </main>
