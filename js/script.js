@@ -2,11 +2,13 @@
 
 
 let burger = document.querySelector(".burger"),
+
     list_nav = document.querySelector("#nav_menu");
 
 
 burger.addEventListener("click", function() {
-list_nav.classList.toggle('active');
+      list_nav.classList.toggle('active');
+      document.querySelector(".burger__line").classList.toggle('ln_black')
 });
 
 
@@ -50,7 +52,7 @@ let header_nav = document.querySelector('.header_nav'),
     headerHeight = header_nav.clientHeight,
     altoDeScroll = document.documentElement.scrollTop;
     header_nav.classList.add("n_fixed")
-    
+
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
     if ( scroll_top > 0) {

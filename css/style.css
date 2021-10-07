@@ -42,7 +42,7 @@ body{
 }
 
 .n_fixed{
-    color: white;top:0;position: fixed;z-index: 10;width: 100%;transition: all 1s;transition: top 1s;;
+    color: white;top:0;position: fixed;z-index: 9;width: 100%;transition: all 1s;transition: top 1s;;
 }
 
 .nav_js{
@@ -129,17 +129,26 @@ body{
     flex: 25%;
     margin: 5px;
 }
+
+.card:hover {
+    box-shadow: #10070726 -1px 1px 2px 0px;
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
 .card-img{
     height: 50%;
     background-color: var(--content);
     background-image: url(../img/pexels-ron-lach-8440066.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
+    transition: all .5s;
 }
 
 .card, .media{
     border-radius: 3.5px;  
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 2%); 
+    transition: all .5s;
 }
 
 .card-content h2, .card-content p{
@@ -150,6 +159,12 @@ body{
     border:0;
     margin: 0; 
 }
+
+.media:hover{
+    cursor: pointer;
+    transform: translateX(-15px);
+}
+
 .media:nth-child(2){
     flex-direction: row-reverse;
 }
@@ -187,7 +202,7 @@ footer{
     border-top: 3px solid tomato;
 }
 
-.nav_footer{
+.nav-footer{
     background-color: black;
 }
 
@@ -397,7 +412,7 @@ input[type="text" i], textarea{
         background-color: #ffffff;
         position: fixed;
         padding: 100px;
-        z-index: 100;
+        z-index: 10;
         transition: all 0.5s;
         clip-path: circle(0% at top left);
         transition: clip-path 0.8s linear;
@@ -424,6 +439,14 @@ input[type="text" i], textarea{
     }   
     .recommended-sites{
         flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .section-cards{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .card{
+        flex: 100%;
     }
 
 }
@@ -431,10 +454,18 @@ input[type="text" i], textarea{
   
 @media screen and (max-width: 480px){
     .hero-img{
-        height: calc(100vh - 58px)
+        height: calc(100vh - 58px);
+        height: 100vh!important;
     }
     .burger{
         display: flex;
     }
+    header .main-menu{
+        width: 100%;
+    }
+    .ln_black{
+        background-color: black;
+    }
+
 }
 
