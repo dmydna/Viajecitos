@@ -50,12 +50,14 @@ function navbar_scrollUp() {
 
 let header_nav = document.querySelector('.header_nav'),
     headerHeight = header_nav.clientHeight,
+    HeaderCn = document.querySelector('header'),
+    headerCnHeight = HeaderCn.clientHeight,
     altoDeScroll = document.documentElement.scrollTop;
     header_nav.classList.add("n_fixed")
 
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
-    if ( scroll_top > 0) {
+    if ( scroll_top > headerCnHeight - 58) {
         header_nav.classList.add("nav_js")
       }
     else{  

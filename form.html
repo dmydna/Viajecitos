@@ -43,7 +43,7 @@
         }
         main{
             position: absolute;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -40%);
             top: 50%;
             left: 50%;
             background-color: white;
@@ -108,11 +108,15 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
     </form>
 
 
-    <div class="container pt-5 pb-5">
+    <div class="container pt-5 pb-5 d-flex flex-wrap  flex-md-nowrap">
+        <div class="w-100">
+            <img class="d-block m-auto w-50 w-sm-100" src="./form/5964.jpg" />
+
+        </div>
     <form>
         <h2 class="pb-5 text-center">Contactanos</h2>
         <div class="form-group row ml-4">
-            <label for="InputEmail">Your Name</label>
+            <label for="Name">Your Name</label>
           <div class="col">
             <input type="text" class="form-control" placeholder="First name">
           </div>
@@ -121,18 +125,19 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
           </div>
         </div>
         <div class="form-group row ml-4">
-            <label for="InputEmail">Your Email</label>
+            <label for="Email">Your Email</label>
             <div class="col">
             <input type="email" class="form-control" id="InputEmail" placeholder="Email">
             </div>
         </div>
-        <div class="form-group row ml-2">
-                <label for="exampleFormControlTextarea1" >Comentarios
+        <div class="form-group row ml-2 mb-5">
+                <label for="Comments" >Comentarios
                 </label>
                 <div class="col">
-            <textarea class="form-control" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="Commets"></textarea>
+            <textarea class="form-control" id="Commets"  rows="3" cols="50" placeholder="Commets"></textarea>
         </div>
           </div>
+          <button class="btn btn-primary d-block w-50 m-auto" type="submit">Acceder</button>
       </form>
     </div>
 
