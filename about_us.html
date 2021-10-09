@@ -13,11 +13,6 @@
 
     <!--<script src="js/script.js" defer></script>
     -->
-    <!--Bootstrap 4-->
-    <link rel="stylesheet" href="form/bootstrap.min.css">
-    <script src="form/bootstrap.min.css"></script>
-    <script src="form/jquery-3.2.1.slim.min.js"></script>
-    <script src="form/popper.min.js"></script>
     <style>
         .rowfix{
             max-width: 1100px;
@@ -63,6 +58,38 @@
             display: none;
         } 
 
+        .contact-area{
+            display: none;
+        }
+        .media{
+            background-color: white;
+            margin: 100px 0;
+        }
+        .media-img{
+            background-image: url(./about_us/18771.jpg);
+        }
+
+
+        .media:hover {
+            cursor: pointer;
+            transform: unset;
+        }
+        .btn{
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            color: #4789ff;
+            background-color: white;
+            border-radius: 3.5px;
+            border: 1px solid #4789ff;
+            font-size: 17px;
+            margin: 50px 0 50px;
+        }
+        .btn:hover{
+            background-color: #4789ff;
+            color: white;
+        }
+
         header a {
             color:black
         }
@@ -73,7 +100,7 @@
             color:#4789ff
         }
     </style>
-    <title>PageDocument</title>
+    <title>About us</title>
 </head>
 <body>
     <header id="top">
@@ -92,77 +119,25 @@
 <!-- hero 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 -->        
-        <div class="hero-img d-none">
+        <div hidden class="hero-img">
             <div class="hero-text">
                 <h1 class='hero-title'>Contacto</h1>
             </div>
         </div>
     </header>
 <main>
-    <section>
-        <div class="container">
-            <form hidden action="">
-                <div class="form-group row">
-                    <label for="Email">Your Name</label>
-                    <input type="email" class="form-control" id="Email">
-                    <small class="form-text- text-muted">Tu correo electronico es importante!</small>
+    <section class="section-media">
+        <div class="container row">
+            <div class="media content-container">
+                <div class="media-img"></div>
+                <div class="media-content">
+                    <h1 class="media-header">About us</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias est hic quaerat laudantium? Consectetur iure laudantium veritatis unde. Fuga, ratione mollitia animi maiores incidunt similique. Odit, accusamus. Iusto nihil id delectus nostrum quo magni recusandae excepturi iure laborum. Deleniti illum dolorem veniam dolor laborum fuga sit error, fugiat voluptatem natus.</p>
+                    <button class="btn" role="link" onclick="window.location='./index.html'">go to home</button>
                 </div>
-                <div class="form-group">
-                    <label for="Password">Your Email</label>
-                    <input type="password" class="form-control" id='Password'>
-                    <small class="form-text text-muted">Tu password es Importante</small>
-                    <br>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-checj-input"> Recordarme
-                        </label>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Acceder</button>
-                </div>
-            </form>
-        
-        
-            <div class="container mt-5 mb-5 pt-5 pb-5 d-flex flex-wrap  flex-md-nowrap bg-white rounded ">
-                    <img class="d-block m-auto w-50 w-sm-100" src="./form/5964.jpg" />
-            <form class="">
-                <h2 class="pb-5 text-center">Contactanos</h2>
-                <div class="form-group row ml-4">
-                    <label for="Name">Your Name</label>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" id="Name">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" id="Name">
-                  </div>
-                </div>
-                <div class="form-group row ml-4">
-                    <label for="Email">Your Email</label>
-                    <div class="col">
-                    <input type="email" class="form-control" id="Email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group row ml-4">
-                    <label for="Telephone">Your Number</label>
-                    <div class="col">
-                    <input type="telephone" class="form-control" id="Email" placeholder="Telephone">
-                    </div>
-                </div>
-                <div class="form-group row ml-2 mb-5">
-                        <label for="Comments" >Comentarios
-                        </label>
-                        <div class="col">
-                    <textarea class="form-control"  rows="3" cols="50" placeholder="Commets" id="Commets"></textarea>
-                </div>
-                  </div>
-                  <button class="btn btn-primary d-block w-50 m-auto" type="submit">Enviar</button>
-              </form>
             </div>
         </div>
     </section>
-
-    
-
-
 </main>
 
 <!--Footer 
@@ -237,7 +212,3 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-leve
     </div>
 </body>
 </html>
-
-
-
-

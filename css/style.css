@@ -26,6 +26,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header a{
+    text-decoration: none;
+    color: white;
+}
+
 .main-nav{
     padding: 20px 0;
     display: flex;
@@ -52,6 +57,8 @@ body{
     font-weight: bold;
 }
 
+
+
 .logo{
     margin-right: auto;
     cursor: pointer;
@@ -71,6 +78,7 @@ body{
     transition: clip-path .8s linear;
     color: black;
 }
+
 
 .hero-img{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photographer.jpg);
@@ -163,6 +171,7 @@ body{
 .media:hover{
     cursor: pointer;
     transform: translateX(-15px);
+    transform: scale(1.01) ;
 }
 
 .media:nth-child(2){
@@ -447,6 +456,9 @@ input[type="text" i], textarea{
     }
     .card{
         flex: 100%;
+    }
+    .active a {
+        color: black;
     }
 
 }

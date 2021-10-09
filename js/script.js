@@ -16,7 +16,7 @@ burger.addEventListener("click", function() {
 
 var back_top_btn = document.querySelector(".back-top");
 
-window.onscroll = function () { scrollFunction() ,navbar_scrollUp(), navbarColor() };
+window.onscroll = function () { scrollFunction() ,prev_navbar(), navbarColor() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 ||
@@ -36,6 +36,14 @@ function back_top(){
 /** Navscroll up */
 
 var prevScrollpos = window.pageYOffset;
+
+
+function prev_navbar(){ 
+  var currentScrollPos = window.pageYOffset;
+  if(currentScrollPos > headerCnHeight){
+     navbar_scrollUp() 
+    } 
+  }
 
 function navbar_scrollUp() {
   var currentScrollPos = window.pageYOffset;
@@ -58,7 +66,7 @@ let header_nav = document.querySelector('.header_nav'),
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
     if ( scroll_top > headerCnHeight - 58) {
-        header_nav.classList.add("nav_js")
+        header_nav.classList.add("nav_js");
       }
     else{  
         header_nav.classList.remove("nav_js")
