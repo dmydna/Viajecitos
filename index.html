@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<!--! lo dejo por las dudas-->
+<!--<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,109 +13,155 @@
     <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
-    <title>PageDocument</title>
+    <title>Viajecitos</title>
+</head> -->
+
+
+<head>
+
+    <!--? etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--? etiquetas link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--? scripts -->
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
+
+    <!--? title -->
+    <title>Viajecitos</title>
+
 </head>
+
+
 <body>
-    <header id="top">
-  
-  <div class="header_nav">   
-        <nav class="main-nav row">
-            <div class="logo">Logo</div>
-            <ul class="main-menu" id="nav_menu">
-                    <li class="menu-item">Home</li>
-                    <li class="menu-item">About</li>
-                    <li class="menu-item">Contact</li>
-            </ul>
+<header id="top">
+    <div class="header_nav"> <!--! nav -->
+        <nav class="main-nav">
+            <div class="logo">Viajecitos</div>
+            <!-- <ul class="main-menu" id="nav_menu">
+                <li class="menu-item">Viajes</li>
+                <li class="menu-item">About</li>
+                <li class="menu-item">Contacto</li>
+            </ul> -->
+            <div class="main-menu" id="nav_menu">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#viajes">Viajes</a>
+                <a href="./form.html">Contacto</a>
+            </div>
             <div class="burger_container">
-                <div class="burger"><div class="burger__line"></div></div>
+                <div class="burger">
+                    <div class="burger__line"></div>
+                </div>
             </div>
         </nav>
-    </div>       
-<!-- hero 
+    </div> <!--! FIN  nav -->
+        <!-- hero
 https://www.w3schools.com/howto/howto_css_hero_image.asp
--->        
-        <div class="hero-img" style='height: 70vh;'>
-            <div class="hero-text">
-                <h1 class="hero-title">I am hero html</h1>
-                <p>hero HTML estructure</p>
-                <button role="link" onclick="window.location='./form.html'">Click-Me</button>
-            </div>
-        </div>
-    </header>
-    <main class="main-content">
-
-<section class="section-cards">
-            <div class="content-container wrap row">  
-                        
-                <!--Cards
-                https://www.w3schools.com/howto/howto_css_cards.asp
-                -->                
-                            <div class="card">
-                                <div class="card-img"></div>
-                                <div class="card-content">
-                                    <h2 class="card-header">Card Title</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!.</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-img"></div>
-                                <div class="card-content">
-                                    <h2 class="card-header">Card Title</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-img"></div>
-                                <div class="card-content">
-                                    <h2 class="card-header">Card Title</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
-                                </div>
-                            </div>
-                        </div>
-        </section>
-        
-<!--Media Object
-https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp
 -->
-
-<section class="section-media">
-    <div class="container row">
-        <div class="media content-container">
-            <div class="media-img"></div>
-            <div class="media-content">
-                <h2 class="media-header">Media-title</h2>
-                <p style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
-            </div>
+    <div class="hero-img">
+        <div class="hero-text">
+            <h1 class="hero-title">Viaje donde quiera</h1>
+            <p>Descubra otro mundo más allá del suyo</p>
+            <button role="link" onclick="window.location='#ver-mas'">ver mas</button>
         </div>
     </div>
-</section>
-<section class="section-media">
-    <div class="container row">
-        <div class="media content-container reverse">
-            <div class="media-img"></div>
-            <div class="media-content">
-                <h1 class="media-header">Media-title</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
-            </div>
-        </div>
+</header>
+
+<main class="main-content">
+
+    <div class="div-title-cards row" id="ver-mas">
+        <h1 class="title-cards">Nuestros destinos predilectos</h1>
     </div>
-</section>
-<section class="section-media">
-    <div class="container row">
-        <div class="media content-container">
-            <div class="media-img"></div>
-            <div class="media-content">
-                <h1 class="media-header">Media-title</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-<section id="recomended" class="section-recommended">
-    <div class="recommended-sites content-container row">
-        <h2 style='flex: 100%;'>Paginas Recomendadas</h2>    
+                <!--Cards
+                https://www.w3schools.com/howto/howto_css_cards.asp-->
+
+    <section class="section-cards">
+        <div class="content-container wrap row">
+            <div class="card">
+                <div class="card-img-1"></div>
+                <div class="card-content">
+                    <h2 class="card-header">NEW YORK</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-2"></div>
+                <div class="card-content">
+                    <h2 class="card-header">TOKYO</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-3"></div>
+                <div class="card-content">
+                    <h2 class="card-header">BARCELONA</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--Media Object
+        https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp
+        -->
+
+    <div class="div-title-section-media row">
+        <h1 class="title-section-media">¿Por qué elegirnos?</h1>
+    </div>
+
+    <section class="section-media">
+        <div class="container row">
+            <div class="media content-container reverse">
+                <div class="media-img-1"></div>
+                <div class="media-content">
+                    <h1 class="media-header">Siempre a disposicion</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-media">
+        <div class="container row">
+            <div class="media content-container reverse">
+                <div class="media-img-2"></div>
+                <div class="media-content">
+                    <h1 class="media-header">Guias fiables</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-media">
+        <div class="container row">
+            <div class="media content-container">
+                <div class="media-img-3"></div>
+                <div class="media-content">
+                    <h1 class="media-header">Media-title</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="recomended" class="section-recommended">
+        <div class="recommended-sites content-container row">
+            <h2 style='flex: 100%;'>Paginas Recomendadas</h2>
+            <div class="site">
+                <div class="site_ico"></div>
+                <div class="site_content">
+                    <h2 style="text-align: center;">whatever</h2>
+                </div>
+                </div>
             <div class="site">
                 <div class="site_ico"></div>
                 <div class="site_content">
@@ -132,57 +180,50 @@ https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp
                     <h2 style="text-align: center;">whatever</h2>
                 </div>
             </div>
-            <div class="site">
-                <div class="site_ico"></div>
-                <div class="site_content">
-                    <h2 style="text-align: center;">whatever</h2>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="flip-card-section row" style='display:none'>
+    <section class="flip-card-section row" style='display:none'>
         <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./img/pexels-monoar-rahman-114907.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>FlipCard</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
+                <div class="flip-card-front">
+                    <img src="./img/pexels-monoar-rahman-114907.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>FlipCard</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                </div>
             </div>
-          </div>
-          <style>
+        </div>
+            <style>
 
-        </style>          
-</section>
+            </style>
+    </section>
 
-
-
-<section class="sucursales">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2622075201093!2d-58.39512598505162!3d-34.62281356601516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb204a2b9147%3A0xe8cbbd3c023b3e34!2sAvenida%20San%20Juan%20%26%20Combate%20de%20los%20Pozos%2C%20C1229%20CABA!5e0!3m2!1ses!2sar!4v1633022286663!5m2!1ses!2sar" width="100%" height="378px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</section>
-
+    <!-- <section class="sucursales">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.2622075201093!2d-58.39512598505162!3d-34.62281356601516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb204a2b9147%3A0xe8cbbd3c023b3e34!2sAvenida%20San%20Juan%20%26%20Combate%20de%20los%20Pozos%2C%20C1229%20CABA!5e0!3m2!1ses!2sar!4v1633022286663!5m2!1ses!2sar"
+            width="100%" height="378px" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section> -->
 </main>
 
-<!--Footer 
+    <!--Footer
 https://programacion.net/articulo/como_hacer_un_footer_fijo_sin_morir_en_el_intento_1669
 
 https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341
 -->
-    
-    <footer class="page-footer">
-        <div class="content-container row">
+
+<footer class="page-footer">
+    <div class="content-container row">
         <div class="contact-area">
-            <div class="contact-header">
-                <h2>Contatc Info</h2>
-                <p class="item-desc">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
-                </p>
-            </div>
+                <div class="contact-header">
+                    <h2>Contatc Info</h2>
+                    <p class="item-desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
+                    </p>
+                </div>
 
             <div class="contact-body">
                 <ul class="contact-main">
@@ -207,40 +248,36 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-leve
                 </ul>
             </div>
         </div>
-        <div class="contact-form">
+        <!-- <div class="contact-form">
             <h2 class="title">Contact Form</h2>
             <form action="">
-                <input type="text" name="firstname" placeholder="Ingrese su nombre..." >
+                <input type="text" name="firstname" placeholder="Ingrese su nombre...">
                 <input type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
                 <textarea name="Coments" id="" cols="48" rows="10" style="width: 100%;"></textarea>
                 <br>
                 <input type="submit" value="enviar" style="width: 100%;">
             </form>
-        </div>
+        </div> -->
     </div>
-        <div class="nav-footer">
-                <div class="main-menu row" style="padding: 0;">
-                    <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
-                        <li class="menu-item">Home</li>
-                        <li class="menu-item">About</li>
-                        <li class="menu-item">Contact</li>
-                    </ul>
-                    <ul class="social-nav">
-                        <li class="menu-item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
-                        <li class="menu-item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
-                        <li class="menu-item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
-                        <li class="menu-item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
-                    </ul>
-                </div>
-        </div>
+<div class="nav-footer">
+    <div class="main-menu row" style="padding: 0;">
+        <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+        <ul class="social-nav">
+            <li class="menu-item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
+            <li class="menu-item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
+            <li class="menu-item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
+            <li class="menu-item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+        </ul>
+    </div>
+</div>
 
-    </footer>
-    <div class="back-top" onclick="back_top()">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+</footer>
+<div class="back-top" onclick="back_top()">
+    <i class="fas fa-arrow-up"></i>
+</div>
 </body>
 </html>
-
-
-
-
