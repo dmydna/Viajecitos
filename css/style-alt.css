@@ -42,3 +42,27 @@ a i{
     font-size: 4rem;
     font-family: 'Italianno', cursive;
 }
+
+.div_button_viajes{
+    display: flex;
+    justify-content: center;
+}
+
+/*? style button */
+
+.button_to_viajes{
+    border: none;
+    border-radius: 0.6rem;
+    outline: 0;
+    display: inline-block;
+    padding: 0.63rem 1.56rem;
+    color: #FFFFFF;
+    background-color: #eda41c;
+    text-align: center;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.button_to_viajes:hover{
+    background-color: #edb140;
+}
