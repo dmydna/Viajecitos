@@ -1,13 +1,31 @@
 
 
+/*
+  let pageloader = document.querySelector("#pageloader");
+  if(pageloader){
+      fake_load();
+  }
+  function fake_load(){
+  setTimeout(function(){ pageLoader() }, 1500);
+
+  document.body.style.overflow = 'hidden'
+
+  function pageLoader() { 
+        pageloader.style.opacity = '0';                 
+        setTimeout(function(){ 
+          pageloader.style.display = 'none';}, 500);
+          document.body.style.overflow = 'unset'
+    };  
+  }
+*/
 
 let burger = document.querySelector(".burger"),
-
     list_nav = document.querySelector("#nav_menu");
 
 
 burger.addEventListener("click", function() {
       list_nav.classList.toggle('active');
+      document.body.classList.toggle('on_load');
       document.querySelector(".burger__line").classList.toggle('ln_black')
 });
 
@@ -61,7 +79,7 @@ let header_nav = document.querySelector('.header_nav'),
     HeaderCn = document.querySelector('header'),
     headerCnHeight = HeaderCn.clientHeight,
     altoDeScroll = document.documentElement.scrollTop;
-    header_nav.classList.add("n_fixed")
+header_nav.classList.add("n_fixed")
 
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
@@ -130,3 +148,5 @@ function navbarColor(){
 
 
 */
+
+
