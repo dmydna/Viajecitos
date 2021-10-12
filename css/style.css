@@ -55,7 +55,13 @@ body{
 }
 
 .n_fixed{
-    color: white;top:0;position: fixed;z-index: 9;width: 100%;transition: all 1s;transition: top 1s;;
+    color: white;
+    top:0;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    transition: all 1s;
+    transition: top 1s;
 }
 
 .nav_js{
@@ -71,6 +77,8 @@ body{
     margin-left: 0.3rem;
     font-weight: bolder;
     font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Italianno', cursive;
 }
 
 .main-menu a{
@@ -113,11 +121,13 @@ body{
 }
 
 .hero-title{
-    font-size:3.12rem;
+    font-size: 4rem;
+    font-weight: lighter;
     /* background: #010809; */
     padding: 0.6rem;
     border-radius: 2.5px;
     margin-bottom: 10rem;
+    font-family: 'Birthstone', cursive;
 }
 
 /*? FIN img header */
@@ -125,7 +135,7 @@ body{
 
 .hero-text button {
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
     outline: 0;
     display: inline-block;
     padding: 0.63rem 1.56rem;
@@ -265,14 +275,6 @@ body{
 
 .media p, .card{
     color: #5a5a5a;
-}
-
-
-footer{
-    background-color: #20222d;
-    color: white;
-    padding: 30px 0;
-    border-top: 3px solid tomato;
 }
 
 .nav-footer{

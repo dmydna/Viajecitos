@@ -42,7 +42,7 @@ function navbar_scrollUp() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".header_nav").style.top = "0";
   } else {
-    document.querySelector(".header_nav").style.top = "-100px";
+    document.querySelector(".header_nav").style.top = "-120px";
   }
   prevScrollpos = currentScrollPos;
 }
