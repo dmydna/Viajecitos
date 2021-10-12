@@ -1,6 +1,5 @@
 
 
-/*
   let pageloader = document.querySelector("#pageloader");
   if(pageloader){
       fake_load();
@@ -17,7 +16,7 @@
           document.body.style.overflow = 'unset'
     };  
   }
-*/
+
 
 let burger = document.querySelector(".burger"),
     list_nav = document.querySelector("#nav_menu");
