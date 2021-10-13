@@ -1,0 +1,21 @@
+@import "../lib/bootstrap/scss/bootstrap";
+
+// ? Color principal //
+
+$principal:  #962624;
+
+
+// ? Variables de bootstrap //
+
+
+$primary:       $principal;
+$enable-shadows: true;
+
+// * Variable boton bootstrap //
+
+
+
+$btn-padding-y:               2rem;
+$btn-padding-x:               2rem;
+
+$btn-border-radius:           2rem;
