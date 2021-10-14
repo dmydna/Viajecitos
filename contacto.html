@@ -5,195 +5,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles_bootstrap.css">
     <link rel="stylesheet" href="./css/style-form.css">
+    <link rel="icon" type="image/svg+xml" href="./favicon/file-signature-solid.svg" sizes="any">
     <script src="https://kit.fontawesome.com/dcc41df9c2.js" crossorigin="anonymous"></script>
-    <title>Contacto</title>
+    <title>Viajecitos - Contacto</title>
 </head>
 
 <body>
 
     <!--?  nav -->
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-space-between m-2">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Viajecitos</span>
-        </div>
+    <header class="header_main">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-space-between p-2">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 fs-1 logo">Viajecitos</span>
+            </div>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./viajes.html" class="nav-link">Viajes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Nosotros</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./viajes.html" class="nav-link">Viajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!--?  Form -->
-
-    <!--! modelo form sin card-->
-    <!-- <section class="bg-transparent text-dark">
-        <div class="container bg-transparent text-dark justify-content-center m,">
-            <div class="row align-items-center mb-5">
-                <div class="col-auto">
-                    <label for="nombre" class="form-label">Nombre</label>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre" style="border-radius: 2rem;">
-                </div>
-                <div class="col-auto">
-                    <label for="nombre" class="form-label">Apellido</label>
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido" style="border-radius: 2rem;">
-                </div>
-            </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-auto">
-                    <label for="email" class="form-label">Email</label>
-                </div>
-                <div class="col">
-                    <input type="email" class="form-control" placeholder="Email" style="border-radius: 2rem;">
-                </div>
-                <div class="col-auto">
-                    <label for="email" class="form-label"> Número</label>
-                </div>
-                <div class="col">
-                    <input type="email" class="form-control" placeholder="Número" style="border-radius: 2rem;">
-                </div>
-            </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-auto">
-                    <label for="password" class="form-label">Contraseña</label>
-                </div>
-                <div class="col">
-                    <input type="password" class="form-control" placeholder="Contraseña" style="border-radius: 2rem;">
-                </div>
-                <div class="col-auto">
-                    <label for="password" class="form-label">Repetir Contraseña</label>
-                </div>
-                <div class="col">
-                    <input type="password" class="form-control" placeholder="Contraseña" style="border-radius: 2rem;">
-                </div>
-            </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-auto">
-                    <label for="comentarios" class="form-label">Comentarios</label>
-                </div>
-                <div class="col">
-                    <textarea class="form-control" id="comment_box" cols="10" rows="3"
-                        placeholder="Deje su comentario" style="border-radius: 1rem;"></textarea>
-                </div>
-            </div>
-            <div class="row align-items-center mb-5">
-                <a href="./index.html" class="btn btn-primary" role="button" style="border-radius: 2rem;">Enviar</a>
+    <main class="body_main">
+        <div class="cuerpo bg-gradient p-5">
+            <section class="container bg-transparent text-dark justify-content-center">
+                <div class="card mb-3" style="max-width: 100%">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./img/image_form_card_vertical.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="container bg-transparent text-dark justify-content-center">
+                                    <div class="row align-items-center mb-5 mt-5">
+                                        <div class="col-auto">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="nombre" class="form-label">Apellido</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Apellido">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-5">
+                                        <div class="col-auto">
+                                            <label for="email" class="form-label">Email</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="email" class="form-label"> Número</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" class="form-control" placeholder="Número">
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mb-5">
+                                        <div class="col-auto">
+                                            <label for="password" class="form-label">Contraseña</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="password" class="form-control" placeholder="Contraseña" ">
+                                        </div>
+                                        <div class=" col-auto">
+                                            <label for="password" class="form-label">Repetir Contraseña</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="password" class="form-control" placeholder="Contraseña" ">
+                                        </div>
+                                    </div>
+                                    <div class=" row align-items-center mb-5">
+                                        <div class="col-auto">
+                                            <label for="comentarios" class="form-label">Comentarios</label>
+                                        </div>
+                                        <div class="col">
+                                            <textarea class="form-control" id="comment_box" cols="10" rows="3"
+                                                placeholder="Deje su comentario"
+                                                style="border-radius: 1rem;">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div class="text-center m-2">
+                <a href="./index.html" class="btn text-white pr-5 pl-5 btn_submit"
+                role="button" ">Enviar</a>
             </div>
         </div>
-    </section> -->
-    <div class="cuerpo bg-primary bg-gradient p-5">
-    <section class="container bg-transparent text-dark justify-content-center">
-        <div class="card border border-primary">
-            <img src="./img/image_guide - copia.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-                <div class="container bg-transparent text-dark justify-content-center m,">
-                    <div class="row align-items-center mb-5 mt-5">
-                        <div class="col-auto">
-                            <label for="nombre" class="form-label">Nombre</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre" style="border-radius: 2rem;">
-                        </div>
-                        <div class="col-auto">
-                            <label for="nombre" class="form-label">Apellido</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Apellido" style="border-radius: 2rem;">
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-auto">
-                            <label for="email" class="form-label">Email</label>
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" placeholder="Email" style="border-radius: 2rem;">
-                        </div>
-                        <div class="col-auto">
-                            <label for="email" class="form-label"> Número</label>
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" placeholder="Número" style="border-radius: 2rem;">
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-auto">
-                            <label for="password" class="form-label">Contraseña</label>
-                        </div>
-                        <div class="col">
-                            <input type="password" class="form-control" placeholder="Contraseña"
-                                style="border-radius: 2rem;">
-                        </div>
-                        <div class="col-auto">
-                            <label for="password" class="form-label">Repetir Contraseña</label>
-                        </div>
-                        <div class="col">
-                            <input type="password" class="form-control" placeholder="Contraseña"
-                                style="border-radius: 2rem;">
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <div class="col-auto">
-                            <label for="comentarios" class="form-label">Comentarios</label>
-                        </div>
-                        <div class="col">
-                            <textarea class="form-control" id="comment_box" cols="10" rows="3"
-                                placeholder="Deje su comentario" style="border-radius: 1rem;"></textarea>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
-                        <a href="./index.html" class="btn btn-primary" role="button"
-                        ">Enviar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+    </main>
 
     <!--? Footer -->
-    <section class="bg-dark text-center text-white">
-        <div class="p-1" style="background-color: orangered;"></div>
-        <div class="container p-4 pb-0">
-            <section class="mb-4">
-                <a class="btn btn-outline-light btn-floating btn-circle m-1" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="btn btn-outline-light btn-floating btn-circle m-1" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="btn btn-outline-light btn-floating btn-circle m-1" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="btn btn-outline-light btn-floating btn-circle m-1" href="#!" role="button">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a class="btn btn-outline-light btn-floating btn-circle m-1" href="#!" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
+    <section class=" bg-dark text-center text-white">
+                                                <div class="p-1" style="background-color: orangered;"></div>
+                                                <div class="container p-4 pb-0">
+                                                    <section class="mb-4">
+                                                        <a class="btn btn-outline-light btn-floating btn-circle m-1"
+                                                            href="https://www.facebook.com" role="button">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                        <a class="btn btn-outline-light btn-floating btn-circle m-1"
+                                                            href="https://www.twitter.com" role="button">
+                                                            <i class="fab fa-twitter"></i>
+                                                        </a>
+                                                        <a class="btn btn-outline-light btn-floating btn-circle m-1"
+                                                            href="https://www.instagram.com" role="button">
+                                                            <i class="fab fa-instagram"></i>
+                                                        </a>
+                                                        <a class="btn btn-outline-light btn-floating btn-circle m-1"
+                                                            href="https://www.youtube.com" role="button">
+                                                            <i class="fab fa-youtube"></i>
+                                                        </a>
+                                                        <a class="btn btn-outline-light btn-floating btn-circle m-1"
+                                                            href="https://www.github.com" role="button">
+                                                            <i class="fab fa-github"></i>
+                                                        </a>
+                                                    </section>
+                                                </div>
+                                                <div class="row align-items-center p-3"
+                                                    style="background-color: rgba(0,0,0,0.2);">
+                                                    <h5 class="col">©Viajecito Travel 2021</h5>
+                                                    <h5 class="col logo fs-1">Viajecitos</h5>
+                                                </div>
             </section>
-        </div>
-        <div class="row align-items-center p-3" style="background-color: rgba(0,0,0,0.2);">
-            <h5 class="col">©Viajecito Travel 2021</h5>
-            <h5 class="col">Viajecitos</h5>
-        </div>
-    </section>
 
-    <!-- ! scripts bootstrap-->
-    <script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+            <!-- ! scripts bootstrap-->
+            <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
