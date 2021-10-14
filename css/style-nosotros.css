@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Maven+Pro&display=swap');
+
+/*? global */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000000;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*? body */
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+/*? header */
+
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9rem 5%;
+}
+
+/*? nav */
+
+.nav_main ul{
+    list-style-type: none;
+}
+
+.nav_main ul li{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.nav_main ul li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_main ul li a:hover{
+    transition: all 0.3s ease 0s;
+    color: royalblue;
+}
+
+/*? logo */
+
+.logo{
+    margin-right: auto;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Italianno', cursive;
+}
+
+/*? boton nav*/
+
+.btn_contacto button{
+    padding: 0.5rem 1.5rem;
+    background-color: #962624;
+    border: none;
+    border-radius: 3.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn_contacto button:hover{
+    background-color: rgba(150, 38, 36, 0.8);
+}
