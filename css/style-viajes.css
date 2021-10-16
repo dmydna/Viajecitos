@@ -6,7 +6,7 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,11 +81,11 @@ body {
       align-items: center; */
 }
 
-.title_cards{
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem 0;
-    font-family: "Maven Pro", sans-serif;
+.title_cards {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Maven Pro", sans-serif;
 }
 
 /*? Cards*/
@@ -136,8 +136,34 @@ body {
 }
 
 .card_image {
-  grid-area: image;
   background: url("../img/image-card-1.jpg");
+  grid-area: image;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/*? imágenes de cards*/
+
+.f1 {
+  background: url("../img/image-card-1.jpg");
+  grid-area: image;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.f2 {
+  background: url("../img/image-card-2-temporal.jpg");
+  grid-area: image;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.f3 {
+  background: url("../img/image-card-3-temporal.jpg");
+  grid-area: image;
   background-size: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -148,12 +174,12 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-.card_text h2{
-    margin: 1.1rem 0;
+.card_text h2 {
+  margin: 1.1rem 0;
 }
 
-.card_text p{
-    margin: 1rem 0;
+.card_text p {
+  margin: 1rem 0;
 }
 
 .card_btn {
@@ -162,8 +188,8 @@ body {
   /* margin-bottom: 1rem; */
 }
 
-.card_btn button{
-    font-family: "Maven Pro", sans-serif;
+.card_btn button {
+  font-family: "Maven Pro", sans-serif;
 }
 
 /* .card_btn_inside{
@@ -225,8 +251,6 @@ body {
   );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-
-
 
 /*? scroll */
 
