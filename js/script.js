@@ -7,15 +7,17 @@
   function fake_load(){
   setTimeout(function(){ pageLoader() }, 1500);
 
-  document.body.style.overflow = 'hidden'
+  //document.body.style.overflow = 'hidden'
 
   function pageLoader() { 
         pageloader.style.opacity = '0';                 
         setTimeout(function(){ 
           pageloader.style.display = 'none';}, 500);
-          document.body.style.overflow = 'unset'
+          //document.body.style.overflow = 'unset'
+
     };  
   }
+
 
 
 let burger = document.querySelector(".burger"),
@@ -24,6 +26,7 @@ let burger = document.querySelector(".burger"),
 
 burger.addEventListener("click", function() {
       list_nav.classList.toggle('active');
+      burger.classList.toggle('burger_active');
       document.body.classList.toggle('on_load');
       document.querySelector(".burger__line").classList.toggle('ln_black')
 });
@@ -82,7 +85,8 @@ header_nav.classList.add("n_fixed")
 
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
-    if ( scroll_top > headerCnHeight - 58) {
+    if ( scroll_top > 58) {
+        //scroll_top > headerCnHeight - 58
         header_nav.classList.add("nav_js");
       }
     else{  
