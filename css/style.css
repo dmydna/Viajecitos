@@ -51,7 +51,13 @@ header a{
 }
 
 .n_fixed{
-    color: white;top:0;position: fixed;z-index: 9;width: 100%;transition: all 1s;transition: top 1s;;
+    color: white;
+    top:0;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    transition: all 1s;
+    transition: top 1s;;
 }
 
 .nav_js{
@@ -75,14 +81,7 @@ header a{
     cursor: pointer;
 }
 
-.active{
-    cursor: pointer;
-    left: 0!important;
-    transition: all 0.5s;
-    clip-path: circle(150% at top left)!important;
-    transition: clip-path .8s linear;
-    color: black;
-}
+
 
 
 .hero-img{
@@ -385,6 +384,28 @@ footer input[type='submit']{
     right: 13px;
 }
 
+.burger_line{
+    transition: 0.25s;
+}
+
+
+.burger_active .burger_line:nth-child(1) {
+    transform: rotate(-45deg);
+    y: 58;
+    x: -42;
+}
+
+
+.burger_active .burger_line:nth-child(2){
+    opacity: 0;
+}
+
+.burger_active .burger_line:nth-child(3){
+    transform: rotate(45deg);
+    y: -13;
+    x: 13;
+}
+
 .nav_js .burger_svg{
     fill: black;
 }
@@ -412,6 +433,16 @@ input[type="text" i], textarea{
     .on_load{
         overflow: hidden;
     }
+
+    .active{
+        cursor: pointer;
+        left: 0!important;
+        transition: all 0.5s;
+        clip-path: circle(150% at top left)!important;
+        transition: clip-path .8s linear;
+        color: black;
+    }
+
     .burger{
         display: flex;
     }
@@ -430,9 +461,21 @@ input[type="text" i], textarea{
         bottom: 0;
         left: -70%;
         left: 0;
+        text-align: center;
     }
+
+    .menu-item{
+        padding: 0;
+        margin: 0 0 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
     .logo{
         display: initial;
+        margin-left: 10px;
+        font-size: 2.5em;
+        font-weight: bolder;
     }
     .media {
         flex-wrap: wrap;
@@ -480,5 +523,24 @@ input[type="text" i], textarea{
         background-color: black;
     }
 
+    .burger_active {
+        width: 70px;
+        height: 70px;
+        background-color: unset;
+        z-index: 12;
+    }
+    .burger_active .burger_svg {
+        fill: black;
+    }
+    .page-footer .content-container{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .contact-area{
+        flex: 100%;
+    }
+    .contact-form{
+        flex: 100%;
+    }
 }
 
