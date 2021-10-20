@@ -12,69 +12,10 @@ body {
   box-sizing: border-box;
 }
 
-/*? header */
-
-.header_main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%;
-}
-
-/*? nav */
-
-.nav_main ul {
-  list-style-type: none;
-}
-
-.nav_main li {
-  display: inline-block;
-  padding: 0 1rem;
-}
-
-.nav_main a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  color: #000000;
-}
-
-.nav_main a:hover {
-  transition: all 0.3s ease 0s;
-  color: royalblue;
-}
-
-/*? logo */
-
-.logo {
-  margin-right: auto;
-  cursor: pointer;
-  margin-left: 0.3rem;
-  font-weight: bolder;
-  font-size: 3rem;
-  font-size: 4rem;
-  font-family: "Italianno", cursive;
-}
-
-/*? boton nav*/
-
-.btn_contacto button {
-  padding: 0.5rem 1.5rem;
-  background-color: #962624;
-  color: #ffffff;
-  border: none;
-  border-radius: 3.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.btn_contacto button:hover {
-  background-color: rgba(150, 38, 36, 0.8);
-}
 .body_main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: royalblue;
   font-family: roboto, sans-serif;
   /* display: flex;
       justify-content: center;
@@ -254,35 +195,6 @@ body {
   );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-
-/*? scroll */
-
-html::-webkit-scrollbar {
-  width: 0.5rem; /*? tamaño del scroll en vertical */
-  height: 1rem; /*? tamaño del scroll en horizontal */
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #30dd8a;
-  border-radius: 4px;
-}
-
-
-html::-webkit-scrollbar-thumb:hover { /*? sombredo cuando se pase el cursor por encima */
-  background: #30dd8a;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-
-html::-webkit-scrollbar-thumb:active { /*? cambio de color cuando esta activo */
-  background-color: #6ce4aa;
-}
-
-html::-webkit-scrollbar-track {
-  background: #fff;
-  border-radius: 4px;
-}
-
 /*? footer */
 
 footer {
