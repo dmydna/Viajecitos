@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 
 /*
 *{
@@ -20,9 +20,8 @@ html{
 
 .loading-logo h1 {
     font-size: 5em;
-    font-weight: 300;
     margin: 0 0 2rem;
-    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
 }
 
 #pageloader{    
