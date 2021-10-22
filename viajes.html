@@ -7,11 +7,46 @@
     <!-- <link rel="stylesheet" href="./css/style-nosotros.css"> -->
     <link rel="stylesheet" href="./css/style-viajes.css">
     <link rel="stylesheet" href="./css/scrollbar.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <!--<link rel="stylesheet" href="./css/nav.css">-->
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
     <title>Viajecitos - Viaje</title>
 </head>
 <body>
+
+
+    <header id="top">
+        <div class="header_nav row">
+            <nav class="main-nav">
+                <div class="logo">Viajecitos</div>
+                <ul class="main-menu" id="nav_menu">
+                    <li class="menu-item" onclick="window.location='./index.html'">Home</li>
+                    <li class="menu-item" onclick="window.location='./about_us.html'">Nosotros</li>
+                    <li class="menu-item" onclick="window.location='./contact.html'">Oficinas</li>
+                </ul>
+                <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
+                <div class="burger_container">
+                    <div class="burger">
+                        <svg class='burger_svg' viewBox="0 0 100 80" width="35" height="35">
+                            <rect width="100" height="10"></rect>
+                            <rect y="30" width="100" height="10"></rect>
+                            <rect y="60" width="100" height="10"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero_img">
+            <div class="hero_text">
+                <h1 class="hero_title">Empieza armar tu viaje</h1>
+                <h2>conoce nuestro planes</h2>
+            </div>
+        </div>
+
+<!--
+
     <header class="header_main">
+
         <div class="div_logo">
             <h2 class="logo">Viajecitos</h2>
         </div>
@@ -23,11 +58,15 @@
             </ul>
         </nav>
         <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
-    </header>
 
+    </header>
+-->
     <main class="body_main">
-        <h2 class="title_cards row">Nuestros viajes para usted</h2>
-        <br>
+
+
+<div id='cards' class="card_section">
+    <h2 class="title_cards row">Nuestros viajes para usted</h2>
+    <br>        
         <div class="cards_container row">
             <div class="card">
                 <div class="card_image f1"></div>
@@ -36,7 +75,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -46,7 +85,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -56,7 +95,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -66,53 +105,60 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image f5"></div>
-                <div class="card_text">
-                    <h3>LONDRES - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image f6"></div>
-                <div class="card_text">
-                    <h3>PARIS - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image f7"></div>
-                <div class="card_text">
-                    <h3>ROMA - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image f8"></div>
-                <div class="card_text">
-                    <h3>SÃO PAULO - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
         </div>
+</div>        
 
+<br>
+<br>
+<div class="cards_container row hidden">
+    <div class="card">
+        <div class="card_image f5"></div>
+        <div class="card_text">
+            <h3>LONDRES - 200 USD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+        </div>
+        <div class="card_btn">
+            <button class="btn_hover bn18">Comprar</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_image f6"></div>
+        <div class="card_text">
+            <h3>PARIS - 200 USD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+        </div>
+        <div class="card_btn">
+            <button class="btn_hover bn18">Comprar</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_image f7"></div>
+        <div class="card_text">
+            <h3>ROMA - 200 USD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+        </div>
+        <div class="card_btn">
+            <button class="btn_hover bn18">Comprar</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_image f8"></div>
+        <div class="card_text">
+            <h3>SÃO PAULO - 200 USD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+        </div>
+        <div class="card_btn">
+            <button class="btn_hover bn18">Comprar</button>
+        </div>
+    </div>
+</div>
+<div class="separador">
+    <div class="btn_mas btn_hover bn18">mostrar mas</div>
+</div>
 
-        <br>
 
         <h2 class="title_cards row">Los mejores hoteles</h2>
         <br>
@@ -124,7 +170,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -134,7 +180,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -144,7 +190,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card">
@@ -154,55 +200,91 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
                 </div>
                 <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image"></div>
-                <div class="card_text">
-                    <h3>NUEVA YORK - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image"></div>
-                <div class="card_text">
-                    <h3>NUEVA YORK - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image"></div>
-                <div class="card_text">
-                    <h3>NUEVA YORK - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_image"></div>
-                <div class="card_text">
-                    <h3>NUEVA YORK - 200 USD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <a href="/"><button class="btn_hover bn18">Comprar</button></a>
+                    <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
         </div>
         <br>
-    </main>
+        <br>
+        <div class="cards_container row hidden">
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_text">
+                    <h3>NUEVA YORK - 200 USD</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_text">
+                    <h3>NUEVA YORK - 200 USD</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_text">
+                    <h3>NUEVA YORK - 200 USD</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_text">
+                    <h3>NUEVA YORK - 200 USD</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <div>FOOTER</div>
+        <div class="separador">
+            <div class="btn_mas btn_hover bn18">mostrar mas</div>
+        </div>
+
+    </main>
+    <script>
+        let btn_mas = document.querySelectorAll('.btn_mas'),
+        hidden = document.querySelectorAll('.hidden');
+
+        for (let i = 0; i < btn_mas.length; i++) {
+             btn_mas[i].addEventListener('click', function(){    
+             hidden[i].classList.toggle('toggle_hidden');
+
+        });
+            }
+
+
+
+    </script>
+    <footer class="page-footer">
+        <div class="nav-footer row">
+                <div class="main-menu" style="padding: 0;">
+                    <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
+                        <li class="menu-item">Home</li>
+                        <li class="menu-item">About</li>
+                        <li class="menu-item">Contact</li>
+                    </ul>
+                    <ul class="social-nav" style="margin-bottom: 50px;padding: 20px 0;">
+                        <li class="menu-item"><a class="fa fa-facebook" href="#" target="_blank" aria-hidden="true"></a></li>
+                        <li class="menu-item"><a class="fa fa-twitter" href="#" target="_blank" aria-hidden="true"></a></li>
+                        <li class="menu-item"><a class="fa fa-pinterest" href="#" target="_blank" aria-hidden="true"></a></li>
+                        <li class="menu-item"><a class="fa fa-instagram" href="#" target="_blank" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+        </div>
+
     </footer>
 </body>
 </html>
