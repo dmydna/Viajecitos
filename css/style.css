@@ -1,5 +1,7 @@
 /* @import url(https://fonts.googleapis.com/css?family=Roboto); */
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Maven+Pro&display=swap');
+@import url(./page_load.css);
+
 
 
 *{
@@ -466,7 +468,6 @@ footer input[type='submit']{
 
 .burger_active .burger_svg {
     fill: white;
-    transition: fill 1s .4s;
 }
 
 
@@ -552,7 +553,7 @@ input[type="text" i], textarea{
         display: initial;
         margin-left: 10px;
         font-size: 2.5em;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .media {
         flex-wrap: wrap;
@@ -608,7 +609,6 @@ input[type="text" i], textarea{
     }
     .burger_active .burger_svg {
         fill: black;
-        transition: fill .4s;
     }
     .page-footer .content-container{
         flex-wrap: wrap;
