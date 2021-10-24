@@ -43,7 +43,7 @@
     <div id="pageloader">
         <div class="loading">
             <div class="loading-logo">
-                <h1>Logo</h1>
+                <h1>Viajecitos</h1>
             </div>
             <div class="loading-dots">
                 <div class="dot"></div>
@@ -54,24 +54,21 @@
     </div>
 <header id="top">
     <div class="header_nav">
-        <nav class="main-nav row">
-            <div class="logo">Logo</div>
-            <ul class="main-menu" id="nav_menu">
-                <li class="menu-item" onclick="window.location='./index.html'">Home</li>
-                <li class="menu-item" onclick="window.location='./about_us.html'">About</li>
-                <li class="menu-item" onclick="window.location='./contact.html'">Contact</li>
+        <nav class="main_nav row">
+            <div class="logo">Viajecitos</div>
+            <ul class="main_menu" id="nav_menu">
+                <li class="menu_item" onclick="window.location='./nosotros.html'">Nosotros</li>
+                <li class="menu_item" onclick="window.location='./viajes.html'">Viajes</li>
+                <li class="menu_item" onclick="window.location='./oficinas.html'">Oficinas</li>
             </ul>
+            <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
             <div class="burger_container">
                 <div class="burger">
-
                     <svg class='burger_svg' viewBox="0 0 100 80" width="35" height="35">
-                        <rect width="100" height="10"></rect>
-                        <rect y="30" width="100" height="10"></rect>
-                        <rect y="60" width="100" height="10"></rect>
+                        <rect class="burger_line" y="00" width="100" height="10"></rect>
+                        <rect class="burger_line" y="30" width="100" height="10"></rect>
+                        <rect class="burger_line" y="60" width="100" height="10"></rect>
                     </svg>
-                    
-                    <i class="fas fa-bars" style="display: none;"></i>
-                    <div class="burger__line" style="display: none;"></div>
                 </div>
             </div>
         </nav>
@@ -79,132 +76,316 @@
         <!-- hero 
 https://www.w3schools.com/howto/howto_css_hero_image.asp
 -->
-    <div class="hero-img" style='height: 70vh;'>
-        <div class="hero-text">
-            <h1 class="hero-title">I am hero html</h1>
-            <p>hero HTML estructure</p>
-            <button role="link" onclick="window.location='#recomended'">Click-Me</button>
+    <div class="hero_img">
+        <div class="hero_text">
+            <h1 class="hero_title">Viaja a donde quieras</h1>
+            <p>Descubra otro mundo más allá del suyo</p>
+            <button class='btn_tour' role="link" onclick="window.location='#recomended'">Click-Me</button>
         </div>
     </div>
 </header>
 
-<main class="main-content">
+<main>
 
                 <!--Cards
                 https://www.w3schools.com/howto/howto_css_cards.asp-->
 
-    <section class="section-cards">
-        <div class="content-container wrap row">
+
+
+  <!-- Recorridos Unicos -->
+
+                <section id="section" class="section_container">
+                    <div class="container flex row">
+                        <div class="section_title">
+                            <h2>Recoridos Unicos</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero corporis sequi doloremque possimus maxime, aperiam mollitia ab delectus. Dolorum
+                            </p>
+                            </div>
+                        <div class="box">
+                            <div class="box_ico"></div>
+                            <div class="site_content text_float">
+                                <p>Irlanda</p>
+                                <p>$300</p>
+                            </div>
+                            <div class="inner_text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                                <button class="btn_tour">Comprar</button>
+                            </div>
+                            </div>
+                        <div class="box">
+                            <div class="box_ico"></div>
+                            <div class="site_content text_float">
+                                <p>El congo</p>
+                                <p>$200</p>
+                            </div>
+                            <div class="inner_text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                                <button class="btn_tour">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box_ico"></div>
+                            <div class="site_content text_float">
+                                <p>Rusia</p>
+                                <p>$600</p>
+                            </div>
+                            <div class="inner_text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                                <button class="btn_tour">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box_ico"></div>
+                            <div class="site_content text_float">
+                                <p>Chile?</p>
+                                <p>$500</p>
+                            </div>
+                            <div class="inner_text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                                <button class="btn_tour">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+
+  <!-- ADS --> 
+
+        <section id="section" class="section_media ads">
+            <div class="container row">
+                <div class="media flex" loading="lazy">
+                    <div class="media_img md_bg"></div>
+                    <div class="media_content">
+                        <h1 class="media_header">50% OFF</h1>
+                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
+                          <br> 
+                    </div>
+                </div>
+            </div>
+        </section>      
+
+        
+  <!-- Destinos -->
+
+        <section id="section" class="section_container">
+            <div class="container flex row">
+                <div class="section_title">
+                <h2>Elegi tu destino</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero corporis sequi doloremque possimus maxime, aperiam mollitia ab delectus. Dolorum
+                </p>
+                </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Alemania</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                    </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Bhutan</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Argentina</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Brazil</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Tokio</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="box destinations">
+                    <div class="box_ico rounded"></div>
+                    <div class="site_content">
+                        <strong>Dubai</strong>
+                        <p class="desc">Lorem ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+  <!-- Paquetes Especiales -->
+
+    <section id="section" class="section_cards">
+        <p style="font-size: 2.2em;
+        color: white;
+        text-align: center;
+        margin-top: 0;">Paquetes Especiales</p>
+        <div class="flex wrap row">
             <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <h2 class="card-header">Card Title</h2>
+                <div class="card_img card_bg"></div>
+                <div class="card_content">
+                    <h2 class="card-header">NEW YORK</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <h2 class="card-header">Card Title</h2>
+                <div class="card_img card_bg2"></div>
+                <div class="card_content">
+                    <h2 class="card-header ">TOKYO</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-img"></div>
-                <div class="card-content">
-                    <h2 class="card-header">Card Title</h2>
+                <div class="card_img card_bg3"></div>
+                <div class="card_content">
+                    <h2 class="card-header ">BARCELONA</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium!</p>
                 </div>
             </div>
         </div>
+        
+        <div class="separador">
+            <div class="btn_mas btn_hover bn18" onclick="window.location='./viajes.html'">Viajes</div>
+        </div>
+
     </section>
 
         <!--Media Object
         https://www.w3schools.com/bootstrap/bootstrap_media_objects.asp
         -->
 
-    <section class="section-media">
+  <!-- Nosotros -->
+
+                <section id="section" class="section_container">
+                    <div class="container flex row">
+                        <div class="section_title">
+                            <h2>Viaja con Nosotros</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero corporis sequi doloremque possimus maxime, aperiam mollitia ab delectus. Dolorum
+                            </p>
+                            </div>
+                        <div class="box about_us">
+                            <div class="box_ico"></div>
+                            <div class="inner_text">
+                                <strong>Descuentos</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                            </div>
+                            </div>
+                        <div class="box about_us">
+                            <div class="box_ico "></div>
+                            <div class="inner_text">
+                                <strong>Viaja Seguro</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                            </div>
+                        </div>
+                        <div class="box about_us">
+                            <div class="box_ico"></div>
+                            <div class="inner_text">
+                                <strong>Tour exclusivos</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                            </div>
+                        </div>
+                        <div class="box about_us">
+                            <div class="box_ico"></div>
+                            <div class="inner_text">
+                                <strong>El mejor equito</strong>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vero?</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+  <!-- Old Home 
+
+    <section class="section-media" style="display: none;">
         <div class="container row">
-            <div class="media content-container">
-                <div class="media-img"></div>
+            <div class="media flex reverse " loading="lazy">
+                <div class="media-img md_bg"></div>
                 <div class="media-content">
-                    <h1 class="media-header">Media-title</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+                    <h1 class="media-header">Siempre a tu disposicion</h1>
+                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
+                      <br> 
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-media">
+    <section class="section-media" style="display: none;">
         <div class="container row">
-            <div class="media content-container reverse">
-                <div class="media-img"></div>
+            <div class="media flex">
+                <div class="media-img md_bg2" loading="lazy"></div>
                 <div class="media-content">
-                    <h1 class="media-header">Media-title</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+                    <h1 class="media-header">Guias Confiables</h1>
+                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
+                      <br> 
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-media">
+    <section class="section-media" style="display: none;">
         <div class="container row">
-            <div class="media content-container">
-                <div class="media-img"></div>
-                <div class="media-content">
-                    <h1 class="media-header">Media-title</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</p>
+            <div class="media flex reverse">
+                <div class="media-img md_bg3" loading="lazy"></div>
+                    <div class="media-content">
+                    <h1 class="media-header">Un carrito</h1>
+                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
+                      <br> 
                 </div>
             </div>
         </div>
     </section>
+    -->
 
+<!-- Newsletter-->
 
-    <section id="recomended" class="section-recommended">
-        <div class="recommended-sites content-container row">
-            <h2 style='flex: 100%;'>Paginas Recomendadas</h2>
-            <div class="site">
-                <div class="site_ico"></div>
-                <div class="site_content">
-                    <h2 style="text-align: center;">whatever</h2>
+    <section id="section" class="section_newsletter">
+            <div class="newsletter flex row">
+                <h2 class="news_header">Suscribirse al Newsletter</h2>
+                <div class="news_content">
+                    <input type="text" placeholder="Ingre tu mail" >
+                    <button>Enviar</button>
                 </div>
                 </div>
-            <div class="site">
-                <div class="site_ico"></div>
-                <div class="site_content">
-                    <h2 style="text-align: center;">whatever</h2>
+    </section>  
+
+  <!-- Imgs END -->
+
+    <section id="section" class="section_container img_end">
+        <div class="container flex">
+            <div class="box">
+                <div class="box_ico"></div>
                 </div>
+            <div class="box">
+                <div class="box_ico"></div>
             </div>
-            <div class="site">
-                <div class="site_ico"></div>
-                <div class="site_content">
-                    <h2 style="text-align: center;">whatever</h2>
-                </div>
+            <div class="box">
+                <div class="box_ico"></div>
             </div>
-            <div class="site">
-                <div class="site_ico"></div>
-                <div class="site_content">
-                    <h2 style="text-align: center;">whatever</h2>
-                </div>
+            <div class="box">
+                <div class="box_ico"></div>
+            </div>
+            <div class="box">
+                <div class="box_ico"></div>
+            </div>
+            <div class="box">
+                <div class="box_ico"></div>
             </div>
         </div>
     </section>
 
-    <section class="flip-card-section row" style='display:none'>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="./img/pexels-monoar-rahman-114907.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>FlipCard</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
-                </div>
-            </div>
-        </div>
-            <style>
-
-            </style>
-    </section>
+ 
+  <!-- Maps -->   
 
     <section class="sucursales" style="display: none;">
         <iframe
@@ -221,39 +402,39 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-leve
 -->
 
 <footer class="page-footer">
-    <div class="content-container row">
-        <div class="contact-area">
+    <div class="flex row">
+        <div class="contact_area">
                 <div class="contact-header">
                     <h2>Contatc Info</h2>
-                    <p class="item-desc">
+                    <p class="item_desc">
                         Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
                     </p>
                 </div>
 
-            <div class="contact-body">
-                <ul class="contact-main">
-                    <li class="contact-item">
-                        <div class="contact-icon">
+            <div class="contact_body">
+                <ul class="contact_main">
+                    <li class="contact_item">
+                        <div class="contact_icon">
                             <a class='fab fa-whatsapp' href="#" target="_blank"></a>
                         </div>
-                        <div class="item-desc">Whatsapps: 15111-111</div>
+                        <div class="item_desc">Whatsapps: 15111-111</div>
                     </li>
-                    <li class="contact-item">
-                        <div class="contact-icon">
+                    <li class="contact_item">
+                        <div class="contact_icon">
                             <a class='fab fa-github' href="#" target="_blank"></a>
                         </div>
-                        <div class="item-desc">Github: dank01az</div>
+                        <div class="item_desc">Github: dank01az</div>
                     </li>
-                    <li class="contact-item">
-                        <div class="contact-icon">
+                    <li class="contact_item">
+                        <div class="contact_icon">
                             <a class='fa fa-twitter' href="#" target="_blank"></a>
                         </div>
-                        <div class="item-desc">Twiter: @little_turtle</div>
+                        <div class="item_desc">Twiter: @little_turtle</div>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="contact-form">
+        <div class="contact_form">
             <h2 class="title">Sucursales</h2>
             <div class="form-content">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.230994586465!2d-58.3669298!3d-34.6027012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1634236669790!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -261,23 +442,23 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-leve
         </div>
     </div>
 <div class="nav-footer">
-    <div class="main-menu row" style="padding: 0;">
-        <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
-            <li class="menu-item">Home</li>
-            <li class="menu-item">About</li>
-            <li class="menu-item">Contact</li>
+    <div class="main_menu row" style="padding: 0;">
+        <ul class="main_nav" style="font-size: 14px;font-weight: normal;">
+            <li class="menu_item">Home</li>
+            <li class="menu_item">About</li>
+            <li class="menu_item">Contact</li>
         </ul>
         <ul class="social-nav">
-            <li class="menu-item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
-            <li class="menu-item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
-            <li class="menu-item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
-            <li class="menu-item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
         </ul>
     </div>
 </div>
 
 </footer>
-<div class="back-top" onclick="back_top()">
+<div class="back_top" onclick="back_top()">
     <i class="fas fa-chevron-up"></i>
 </div>
 </body>

@@ -27,6 +27,12 @@ body {
       align-items: center; */
 }
 
+main {
+  background-color: #ebebeb;
+  font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 /*? - Nav   */
 
@@ -35,20 +41,7 @@ header a{
   color: white;
 }
 
-.main-nav{
-  padding: 20px 0;
-  display: flex;
-  font-weight: 600;
-  font-weight: 100;
-  list-style: none;
-  margin: 0;
-  /***/
-  padding: 20px 0;
-  line-height: 60px;
-  transition: all .4s;
 
-  justify-content: space-between;
-}
 
 .main-menu{
   display: flex;
@@ -142,7 +135,7 @@ header a{
   width: 65px;
   height: 60px;
   display: none;
-  z-index: 12;
+  z-index: 100;
   transition: background-color .88s;
 }
 .burger_active{
@@ -359,6 +352,9 @@ header a{
       background-color: #FFF;
   } */
 
+
+  /*?--BTN---*/
+
 .btn_hover {
   width: 50%;
   height: 50%;
@@ -392,19 +388,22 @@ header a{
   );
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
-/*? footer */
-
 
 
 .btn_mas{ 
   width: 300px;
   padding: 15px;
   margin-inline: auto;
-
 }
 
+
+/*? footer */
+
+
+
+
 .separador {
-  margin: 5em 0;
+  padding: 5em 0;
 }
 
 .hidden{
@@ -413,7 +412,7 @@ header a{
 }
 
 .toggle_hidden{
-    max-height: 500px;
+    max-height: 28rem;
     transition: max-height 0.5s;
 }
 
@@ -434,6 +433,7 @@ footer .main-menu {
 
 footer .main-nav{
   padding: 0;
+  margin: 0;
 }
 
 .main-menu {
@@ -446,14 +446,17 @@ footer .main-nav{
   display: flex;
   font-weight: bold;
 }
-.main-nav {
+ .main-nav {
   padding: 20px 0;
   display: flex;
-  font-weight: 600;
   font-weight: 100;
   list-style: none;
-  margin: 0;
-}
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 60px;
+  transition: all .4s;
+  justify-content: space-between;
+} 
 
 .menu-item {
   display: inline;
@@ -610,7 +613,7 @@ footer .menu-item{
     display: none;
   }
   .toggle_hidden{
-    max-height: calc(2*(500px + 10px));
+    max-height: calc(2*(28rem + 2rem));
   }
 
 }
@@ -656,7 +659,7 @@ footer .menu-item{
     gap: .8rem;
   }
   .toggle_hidden{
-    max-height: calc(4*(500px + 10px));
+    max-height: calc(4*(28rem + 2rem));
   }
 
 }
