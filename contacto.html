@@ -37,61 +37,61 @@
                     <label for="nombre" class="form-label label_form">Nombre</label>
                     <div class="form_grupo_input">
                         <input type="text" class="form-control form_input" name="nombre" id="nombre" placeholder="Juan" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
                 <!--? grupo apellido -->
                 <div class="form_grupo" id="grupo_apellido">
                     <label for="apellido" class="form-label label_form">Apellido</label>
                     <div class="form_grupo_input">
                         <input type="text" class="form-control form_input" name="apellido" id="apellido" placeholder="Peréz" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
                 <!--? grupo email -->
                 <div class="form_grupo" id="grupo_email">
                     <label for="email" class="form-label label_form">Email</label>
                     <div class="form_grupo_input">
                         <input type="email" class="form-control form_input" name="email" id="email" placeholder="name@dominio.com" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">El email solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                 </div>
                 <!--? grupo número -->
                 <div class="form_grupo" id="grupo_numero">
                     <label for="numero" class="form-label label_form">Número</label>
                     <div class="form_grupo_input">
                         <input type="text" class="form-control form_input" name="numero" id="numero" placeholder="1145684165" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">El número teléfono solo puede contener números y el máximo son 14 dígitos.</p>
                 </div>
                 <!--? grupo contraseña -->
                 <div class="form_grupo" id="grupo_contraseña">
                     <label for="contraseña" class="form-label label_form">Contraseña</label>
                     <div class="form_grupo_input">
                         <input type="password" class="form-control form_input" name="contraseña" id="contraseña" placeholder="Contraseña" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
                 <!--? grupo contraseña 2 -->
                 <div class="form_grupo" id="grupo_contraseña2">
                     <label for="contraseña2" class="form-label label_form">Repetir contraseña</label>
                     <div class="form_grupo_input">
                         <input type="password" class="form-control form_input" name="contraseña2" id="contraseña2" placeholder="Contraseña" >
-                        <i class="form_validacion_estado bi bi-x-circle"></i>
+                        <i class="form_validacion_estado far fa-times-circle"></i>
                     </div>
-                    <p class="form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    <p class="form_input_error">Ambas contraseñas deben ser iguales.</p>
                 </div>
                 <!--? grupo de mensaje error -->
                 <div class="form_mensaje" id="form_mensaje">
                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete los campos obligatorios. </p>
                 </div>
                 <!--? grupo de boton enviar -->
-                <div class="form_grupo form_grupo_btn_submit">
+                <div class="form_grupo form_grupo_btn_enviar">
                     <button type="submit" class="form_btn"><span>Enviar</span></button>
                     <p class="form_mensaje_exito" id="form_mensaje_exito">¡El formulario se envió exitosamente!</p> <!--? mensaje de envio -->
                 </div>
@@ -101,10 +101,10 @@
     <footer>
         <div>FOOTER</div>
     </footer>
+    <script src="./js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./js/contacto.js"></script>
 </body>
 
 </html>

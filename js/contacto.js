@@ -2,7 +2,7 @@ const formulario = document.getElementById("formulario")
 const inputs = document.querySelectorAll("#formulario input")
 
 const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, //? Letras y espacios, pueden llevar acentos.
+    nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, //? Letras y espacios, pueden llevar acentos.
     apellido: /^[a-zA-ZÀ-ÿ\s]{2,40}$/,
     contraseña: /^.{4,12}$/, //? 4 a 12 digitos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -47,14 +47,14 @@ const campoValidacion = (expresion, input, campo) => {
         document.getElementById(`grupo_${campo}`).classList.remove("form_grupo_incorrecto")
         document.getElementById(`grupo_${campo}`).classList.add("form_grupo_correcto")
         document.querySelector(`#grupo_${campo} i`).classList.add("fa-check-circle")
-        document.querySelector(`#grupo_${campo} i`).classList.remove("bi bi-x-circle")
+        document.querySelector(`#grupo_${campo} i`).classList.remove("fa-times-circle")
         document.querySelector(`#grupo_${campo} .form_input_error`).classList.remove("form_input_error_activo")
         campos[campo] = true;
     }else{
         document.getElementById(`grupo_${campo}`).classList.add("form_grupo_incorrecto")
         document.getElementById(`grupo_${campo}`).classList.remove("form_grupo_correcto")
         document.querySelector(`#grupo_${campo} i`).classList.remove("fa-check-circle")
-        document.querySelector(`#grupo_${campo} i`).classList.add("bi bi-x-circle")
+        document.querySelector(`#grupo_${campo} i`).classList.add("fa-times-circle")
         document.querySelector(`#grupo_${campo} .form_input_error`).classList.add("form_input_error_activo")
         campos[campo] = false;
     }
@@ -68,14 +68,14 @@ const contraseñaValidacion = () => {
         document.getElementById(`grupo_contraseña2`).classList.add("form_grupo_incorrecto")
         document.getElementById(`grupo_contraseña2`).classList.remove("form_grupo_correcto")
         document.querySelector(`#grupo_contraseña2 i`).classList.remove("fa-check-circle")
-        document.querySelector(`#grupo_contraseña2 i`).classList.add("bi bi-x-circle")
+        document.querySelector(`#grupo_contraseña2 i`).classList.add("fa-times-circle")
         document.querySelector(`#grupo_contraseña2 .form_input_error`).classList.add("form_input_error_activo")
         campos["contraseña"] = false;
     }else{
         document.getElementById(`grupo_contraseña2`).classList.remove("form_grupo_incorrecto")
         document.getElementById(`grupo_contraseña2`).classList.add("form_grupo_correcto")
         document.querySelector(`#grupo_contraseña2 i`).classList.add("fa-check-circle")
-        document.querySelector(`#grupo_contraseña2 i`).classList.remove("bi bi-x-circle")
+        document.querySelector(`#grupo_contraseña2 i`).classList.remove("fa-times-circle")
         document.querySelector(`#grupo_contraseña2 .form_input_error`).classList.remove("form_input_error_activo")
         campos["contraseña2"] = true;
     }
@@ -88,7 +88,7 @@ inputs.forEach((input) => {
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault()
-
+    console.log(campos.nombre, campos.apellido, campos.email, campos.numero, campos.contraseña)
     if(campos.nombre && campos.apellido && campos.email && campos.numero && campos.contraseña){
         formulario.reset();
         
