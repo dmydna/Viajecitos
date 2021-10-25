@@ -1,6 +1,6 @@
 /* @import url(https://fonts.googleapis.com/css?family=Roboto); */
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Maven+Pro&display=swap');
-@import url(./page_load.css);
+/*@import url(./page_load.css);*/
 
 @font-face {
     font-family: Natalie;
@@ -20,6 +20,8 @@
 :root{
     --content : #efefef;
     --none: none;
+    --primary: crimson;
+    --secondary: none;
 }
 
 html {
@@ -60,8 +62,70 @@ header a{
     color: white;
 }
 
+/*?   PageLoader      */
+
+#pageloader div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading-logo h1 {
+    font-size: 5em;
+    margin: 0 0 2rem;
+    font-weight: bold;
+}
+
+#pageloader{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color:var(--primary);
+    overflow: hidden;
+    color: #fff;
+    transition: all 1s;
+}
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.loading-dots > div {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: 1.5s doted infinite ease-in-out both;
+    margin-left: .8rem!important;
+}
 
 
+
+.loading-dots .dot{
+    animation-delay: -0.30s;
+}
+.loading-dots .dot2{
+    animation-delay: -0.15;
+}
+
+@keyframes doted {
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(1);
+    }
+}
+
+/*?   Nav----*/
 
 .main_nav{
     padding: 20px 0;
@@ -186,7 +250,7 @@ header a{
     max-width: 1100px;
     margin: 0 auto 0;
 }
-
+/* 
 .card {
     width: 25vw;
     height: 400px;
@@ -216,16 +280,6 @@ header a{
     transition: all .5s;
 }
 
-.card_bg{
-    background-image: url(../img/image-card-1.jpg);
-}
-.card_bg2{
-    background-image: url(../img/image-card-2-temporal.jpg);
-}
-.card_bg3{
-    background-image: url(../img/image-card-3-temporal.jpg);
-}
-
 
 .card, .media{ 
     border-radius: .4rem;
@@ -237,7 +291,7 @@ header a{
 
 .card_content h2, .card_content p{
     margin: 1.3em 1.5em 0;
-}
+} */
 
 .media {
     border:0;
@@ -253,6 +307,33 @@ header a{
 /* .media:nth-child(2){
     flex-direction: row-reverse;
 } */
+
+
+/*?    Cards     pLANS*/
+
+
+
+#section_plans .box {
+    margin: 0 10px;
+    flex: 25%;
+    height: 400px; 
+    border: 0;
+    transition: transform .5s; 
+}  
+
+#section_plans .container {
+    justify-content: space-evenly;
+}
+
+#section_plans .box:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: transform .5s;
+}  
+#section_plans .section_title h2{
+    color: white;
+}
+
 
 
 .media_img{
@@ -282,12 +363,6 @@ header a{
 .media_content{
     flex:auto;
     margin: 80px 26px 0;
-}
-
-
-
-.media p, .card{
-    color: #5a5a5a;
 }
 
 
@@ -430,11 +505,11 @@ footer .main_nav{
     background-image: url(../img/nosotros_bg4.jpg);
 }
 
-.section_container, .section_media, .section_cards{
+.section_container{
     padding: 30px 0 0;
 }
 
-.section_cards{
+#section_plans{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/image-card-3-temporal.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -518,7 +593,7 @@ footer input[type='submit']{
     height: 35px;
     border-radius: 100%;
     color: white;
-    background-color: tomato;
+    background-color: var(--primary);
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -633,20 +708,21 @@ input[type="text" i], textarea{
 }
 
 .btn_tour:hover {
-    background-color: black;
+    background-color: var(--primary);
 }
 
 .btn_tour{
-    border: none;
-    border-radius: 0.6rem;
+    border: 2px solid;
+    border-radius: 6rem;
     outline: 0;
     display: inline-block;
     padding: 0.63rem 1.56rem;
-    color: #FFFFFF;
-    background-color: #eda41c;
+    color: #FFF;
+    background-color: transparent;
     text-align: center;
     cursor: pointer;
-    margin: 1rem;
+    font-weight: bold;
+    margin: 48px 0px;
 }
 
 .btn_cn {
@@ -698,16 +774,13 @@ input[type="text" i], textarea{
     margin-inline: auto;
   }
 
-  .separador{
-      padding: 5em 0;
-      padding-bottom: 1em;
-  }
 
   /*? boton nav*/
   
   .btn_contacto button {
     padding: 0.5rem 1.5rem;
     background-color: #962624;
+    background-color: var(--primary);
     color: #ffffff;
     border: none;
     border-radius: 3.1rem;
@@ -717,6 +790,7 @@ input[type="text" i], textarea{
   
   .btn_contacto button:hover {
     background-color: rgba(150, 38, 36, 0.8);
+    background-color: var(--secondary);
   }
 
 
@@ -755,14 +829,23 @@ input[type="text" i], textarea{
 .rounded {
     border-radius: 50%;
     height: 115px;
+    transition: box-shadow 1s;
 }
 
 
 .destinations {
-width: 130px;
-background-color: transparent;
-height: 250px;
+    width: 130px;
+    background-color: transparent;
+    height: 250px;
+    overflow: visible;
 }
+
+
+.rounded:hover{
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.39);
+    transition: box-shadow 1s;
+}
+
 
 
 
@@ -780,15 +863,26 @@ height: 250px;
 
 .inner_text {
     opacity: 0;
-    background: linear-gradient(to bottom,transparent, #eda41c);
+    /* background: linear-gradient(to bottom,transparent, #eda41c);
+    background: linear-gradient(to bottom,transparent, var(--primary)); */
     position: absolute;
-    top: 0;
+    /* top: 0; */
     bottom: 0;
     padding: 20px;
-    padding-top: 80%;
+    /* padding-top: 80%; */
     transition: all 1s;
+    /* width: 100%;
+    height: 100%; */
 }
 
+.inner_text p {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 60px;
+}
 
 
 
@@ -807,6 +901,7 @@ strong{
     margin: 0;
     padding: 10px;
     background-color: black;
+    border: 0;
 }
 
 .box:hover .inner_text{
@@ -820,6 +915,25 @@ strong{
 }
 
 
+.box_ico::after{ 
+    content: "";
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,transparent, var(--primary));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s;
+    opacity: 0;
+} 
+
+
+#section_tour .box:hover .box_ico::after{
+    opacity: 1;
+    transition: all 1s;
+}  
+
+
 /* Viaja con Nosotros*/
 
 
@@ -829,6 +943,9 @@ strong{
     padding-top: 10%;
     background: white;
     color: black;
+    width: 100%;
+    color: gray;
+    text-align: center;
 }
 
 .about_us .box_ico{
@@ -860,11 +977,12 @@ strong{
 
 
 
+
 /*?       Newsletter       */
 
 
 .section_newsletter {
-    background-color: crimson!important;
+    background-color: var(--primary);
     padding: 30px;
     color: white;
 }
@@ -916,6 +1034,10 @@ strong{
         transition: clip-path .8s linear;
         color: black;
     }
+    .hero_text{
+        width: 100%;
+    }
+
     .burger_container{
         display: block;
     }
@@ -971,18 +1093,22 @@ strong{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .section_cards{
+    #section_plans{
         padding-right: 10%;
         padding-left: 10%;
     }
-    .card{
+    /* .card{
         flex: 100%;
-    }
+    } */
     .active a {
         color: black;
     }
     .btn_contacto button{
         display: none;
+    }
+    #section_plans .box{
+        flex: 100%;
+        margin: 10px;
     }
 
 }
@@ -991,7 +1117,7 @@ strong{
 @media screen and (max-width: 480px){
     .hero_img{
         height: calc(100vh - 58px);
-        height: 100vh!important;
+        height: 100vh;
     }
     .burger{
         display: flex;
@@ -1023,6 +1149,35 @@ strong{
     .contact_form{
         flex: 100%;
     }
+    .box{
+        width: 100%;
+    }
+    .destinations{
+        width: 135px;
+    }
+    .inner_text{
+        width: 50%;
+    }
+    .rounded {
+        border-radius: 134px;
+        height: 115px;
+        width: 115px;
+        margin-inline: auto;
+    }
+    
+    .inner_text{
+        width: 100%;
+    }
 }
 
 
+
+.card_bg{
+    background-image: url(../img/image-card-1.jpg);
+}
+.card_bg2{
+    background-image: url(../img/image-card-2-temporal.jpg);
+}
+.card_bg3{
+    background-image: url(../img/image-card-3-temporal.jpg);
+}

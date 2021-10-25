@@ -79,7 +79,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
     <div class="hero_img">
         <div class="hero_text">
             <h1 class="hero_title">Viaja a donde quieras</h1>
-            <p>Descubra otro mundo más allá del suyo</p>
+            <h2>Descubra otro mundo más allá del suyo</h2>
             <button class='btn_tour' role="link" onclick="window.location='#viajes'">Ver más</button>
         </div>
     </div>
@@ -94,8 +94,8 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
   <!-- Recorridos Unicos -->
 
-                <section id="section" class="section_container">
-                    <div id="viajes" class="container flex row">
+                <section id="section_tour" class="section_container">
+                    <div class="container flex row">
                         <div class="section_title">
                             <h2>Recoridos Unicos</h2>
                             <p>Destinos especiales y exoticos, con nuestro catalago de mas
@@ -110,6 +110,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
                                 <p>$200</p>
                             </div>
                             <div class="inner_text">
+                                <!--Usar after-->
                                 <p>Eliga ahora mismo un viaje a Dublin para conteplar sus bella artitectura.</p>
                                 <button class="btn_tour">Comprar</button>
                             </div>
@@ -154,7 +155,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
   <!-- ADS --> 
 
-        <section id="section" class="section_media ads">
+        <section id="section_media" class="section_container ads">
             <div class="container row">
                 <div class="media flex" loading="lazy">
                     <div class="media_img md_bg"></div>
@@ -171,7 +172,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
         
   <!-- Destinos -->
 
-        <section id="section" class="section_container">
+        <section id="section_travel" class="section_container">
             <div class="container flex row">
                 <div class="section_title">
                 <h2>Elegi tu destino</h2>
@@ -226,11 +227,44 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
   <!-- Paquetes Especiales -->
 
-    <section id="section" class="section_cards">
-        <p style="font-size: 2.2em;
-        color: white;
-        text-align: center;
-        margin-top: 0;">Paquetes Especiales</p>
+  <section id="section_plans" class="section_container">
+    <div class="container flex row">
+        <div class="section_title">
+            <h2>Paquetes Especiales</h2>
+            </div>
+        <div class="box about_us">
+            <div class="box_ico card_bg"></div>
+            <div class="inner_text">
+                <strong>Nueva York</strong>
+                <p>Cononce Manhantan y recorre las calles de una de las ciudad mas grandes y conocidas del mundo.</p>
+            </div>
+            </div>
+        <div class="box about_us">
+            <div class="box_ico card_bg2"></div>
+            <div class="inner_text">
+                <strong>Tokio</strong>
+                <p>Dormir en un ryokan, relajarse en un onsen, contemplar el monte Fuji, ensimismarse con las luces de la ciudad o visitar sus templos, tu eliges que hacer.</p>
+            </div>
+        </div>
+        <div class="box about_us">
+            <div class="box_ico card_bg"></div>
+            <div class="inner_text">
+                <strong>Barcelona</strong>
+                <p>Ciudad europea con una gran historia, casa de artistas famosos, edificios antiguos y excelente clima.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="separador">
+        <div class="btn_mas btn_hover bn18" onclick="window.location='./viajes.html'">Viajes</div>
+    </div>
+
+</section>
+
+    <section style='display: none;' id="section_plans" class="section_container">
+        <div class="section_title">
+            <h2 style="color: white;">Paquetes Especiales</h2>
+            </div>
         <div class="flex wrap row">
             <div class="card">
                 <div class="card_img card_bg"></div>
@@ -267,7 +301,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
   <!-- Nosotros -->
 
-                <section id="section" class="section_container">
+                <section id="section_us" class="section_container">
                     <div class="container flex row">
                         <div class="section_title">
                             <h2>Viaja con Nosotros</h2>
@@ -307,52 +341,10 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
                 </section>
 
 
-  <!-- Old Home 
-
-    <section class="section-media" style="display: none;">
-        <div class="container row">
-            <div class="media flex reverse " loading="lazy">
-                <div class="media-img md_bg"></div>
-                <div class="media-content">
-                    <h1 class="media-header">Siempre a tu disposicion</h1>
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
-                      <br> 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-media" style="display: none;">
-        <div class="container row">
-            <div class="media flex">
-                <div class="media-img md_bg2" loading="lazy"></div>
-                <div class="media-content">
-                    <h1 class="media-header">Guias Confiables</h1>
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
-                      <br> 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-media" style="display: none;">
-        <div class="container row">
-            <div class="media flex reverse">
-                <div class="media-img md_bg3" loading="lazy"></div>
-                    <div class="media-content">
-                    <h1 class="media-header">Un carrito</h1>
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, illum.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia ullam tempore alias est nisi provident, debitis consequuntur, odit numquam perferendis quod illum animi. Facilis?.<p>
-                      <br> 
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
 
 <!-- Newsletter-->
 
-    <section id="section" class="section_newsletter">
+    <section id="section_newsletter" class="section_newsletter">
             <div class="newsletter flex row">
                 <h2 class="news_header">Suscribete al Newsletter</h2>
                 <div class="news_content">
@@ -364,7 +356,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
   <!-- Imgs END -->
 
-    <section id="section" class="section_container img_end">
+    <section id="section_end" class="section_container img_end">
         <div class="container flex">
             <div class="box">
                 <div class="box_ico"></div>
@@ -410,7 +402,7 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-build-a-responsive-multi-leve
                 <div class="contact-header">
                     <h2>Nuestros Contactos</h2>
                     <p class="item_desc">
-                        
+                            Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
                     </p>
                 </div>
 
