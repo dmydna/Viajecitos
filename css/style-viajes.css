@@ -297,10 +297,6 @@ header a{
   justify-content: space-around;
 }
 
-.card p {
-  text-align: center;
-}
-
 .card_image {
   background: url("../img/image-card-1.jpg");
   grid-area: image;
@@ -322,7 +318,60 @@ header a{
   background: url("../img/image-card-3-temporal.jpg");
 }
 
-.f1, .f2, .f3{
+.f4{
+  background: url(../img/egy_box2.jpg);
+}
+
+.f5{
+  background: url(../img/cl_box4.jpg);
+}
+
+.f6{
+  background: url(../img/rus_box3.jpg);
+}
+
+.f7{
+  background: url(../img/destino_bg2.jpg);
+}
+
+.f8{
+  background: url(../img/destino_bg6.jpg);
+}
+
+.f9{
+  background: url(../img/nyc_hotel.jpg);
+}
+
+.f10{
+  background: url(../img/jp_hotel.jpg);
+}
+
+.f11{
+  background: url(../img/esp_hotel.jpg);
+}
+
+.f12{
+  background: url(../img/egy_hotel.jpg);
+}
+
+.f13{
+  background: url(../img/rus_hotel.jpg);
+}
+
+.f14{
+  background: url(../img/eua_hotel.jpg);
+}
+
+.f15{
+  background: url(../img/irl_hotel.jpg);
+}
+
+.f16{
+  background: url(../img/arg_hotel.jpg);
+}
+
+.f1,.f2,.f3,.f4,.f5,.f6,.f7,.f8,
+.f9,.f10,.f11,.f12,.f13,.f14,.f15,.f16{
   grid-area: image;
   background-size: cover;
 }
@@ -331,6 +380,7 @@ header a{
 /*? texto y botón de card*/
 
 .card_text {
+  text-align: center;
   grid-area: text;
   font-family: "Maven Pro", sans-serif;
 }
@@ -546,7 +596,6 @@ footer .menu-item{
 }
 .desc{
   color:gray;
-  text-align: center;
 }
 
 /*?  back to top*/
