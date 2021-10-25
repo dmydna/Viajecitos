@@ -367,6 +367,69 @@ footer .main_nav{
     background-size: cover;
 }
 
+/*? img de los box_ico*/
+
+/*? Recorrido */
+.recorrido_bg1{
+    background-image: url(../img/irl_box.jpg);
+}
+
+.recorrido_bg2{
+    background-image: url(../img/egy_box2.jpg);
+}
+
+.recorrido_bg3{
+    background-image: url(../img/rus_box3.jpg);
+}
+
+.recorrido_bg4{
+    background-image: url(../img/cl_box4.jpg);
+}
+
+/*? Destinos */
+
+.destino_bg1{
+    background-image: url(../img/cl_box4.jpg);
+}
+
+.destino_bg2{
+    background-image: url(../img/destino_bg2.jpg);
+}
+
+.destino_bg3{
+    background-image: url(../img/destino_bg3.jpg);
+}
+
+.destino_bg4{
+    background-image: url(../img/rus_box3.jpg);
+}
+
+.destino_bg5{
+    background-image: url(../img/image-card-2-temporal.jpg);
+}
+
+.destino_bg6{
+    background-image: url(../img/destino_bg6.jpg);
+}
+
+/*? Nosotros*/
+
+.nosotros_bg1{
+    background-image: url(../img/nosotros_bg1.jpg);
+}
+
+.nosotros_bg2{
+    background-image: url(../img/nosotros_bg2.jpg);
+}
+
+.nosotros_bg3{
+    background-image: url(../img/nosotros_bg3.jpg);
+}
+
+.nosotros_bg4{
+    background-image: url(../img/nosotros_bg4.jpg);
+}
+
 .section_container, .section_media, .section_cards{
     padding: 30px 0 0;
 }
