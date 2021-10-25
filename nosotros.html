@@ -16,19 +16,76 @@
 </head>
 
 <body>
-    <header class="header_main">
-        <div class="div_logo">
-            <h2 class="logo">Viajecitos</h2>
+    <header id="top">
+        <div class="header_nav">
+            <nav class="main-nav row">
+                <div class="logo" onclick="window.location='./index.html'">Viajecitos</div>
+                <ul class="main-menu" id="nav_menu">
+                    <li class="menu-item" onclick="window.location='./index.html'">Home</li>
+                    <li class="menu-item" onclick="window.location='./nosotros.html'">Nosotros</li>
+                    <li class="menu-item" onclick="window.location='#'">Oficinas</li>
+                </ul>
+                <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
+                <div class="burger_container">
+                    <div class="burger">
+                        <svg class='burger_svg' viewBox="0 0 100 80" width="35" height="35">
+                            <rect class="burger_line" y="00" width="100" height="10"></rect>
+                            <rect class="burger_line" y="30" width="100" height="10"></rect>
+                            <rect class="burger_line" y="60" width="100" height="10"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="nav_main">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./viajes.html">Viajes</a></li>
-                <li><a href="#">Oficinas</a></li>
-            </ul>
-        </nav>
-        <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
-    </header>
+        <div class="hero_img about_img">
+            <div class="hero_text">
+                <div class="hero_content">
+                        <h1 class="hero_title">Conoce sobre Viajecitos</h1>
+                </div>
+            </div>
+ 
+        </div>
+
+        <style>
+
+            .search_bar{
+                width: calc(100% - 200px);
+                padding: 10px;
+                margin: none;
+                border: none;
+                outline: none;
+            }
+            .search_btn{
+                width: 100px;
+                padding: 10px;
+                box-sizing: border-box;
+                color: white;
+                background-color: crimson;
+                font-weight: bold;
+                border: 0;
+                border-radius: 2.5px;
+                margin-left: -5px;
+                cursor: pointer;
+                transition: background-color 1s;
+            }
+
+            .search_btn:hover{
+                background-color: rgb(220, 20, 60);
+                transition: background-color 1s;
+            }
+
+            .hero_img{
+                height: 80vh;
+            }
+            .search_container{
+                margin: 49px 0;
+            }
+            .hero_content{
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+        </style>
     <main>
         <article class="body_about">
             <div class="image_container"></div>
@@ -73,13 +130,13 @@
                     dolorem nesciunt nisi sapiente voluptates rem! Nesciunt minima temporibus doloremque ullam. Corporis
                     quaerat unde fuga, minima ratione asperiores iste repellat qui sit fugiat distinctio exercitationem
                     consequuntur nisi.</p>
-                <hr>
             </div>
         </article>
     </main>
     <footer>
         <div>FOOTER</div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
