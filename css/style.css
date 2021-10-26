@@ -509,6 +509,32 @@ footer .main_nav{
     padding: 30px 0 0;
 }
 
+/*? Imgs END */
+
+.ico1{
+    background-image: url(../img/ico1.jpg)
+}
+
+.ico2{
+    background-image: url(../img/ico2.jpg)
+}
+
+.ico3{
+    background-image: url(../img/ico3.jpg)
+}
+
+.ico4{
+    background-image: url(../img/ico4.jpg)
+}
+
+.ico5{
+    background-image: url(../img/ico5.jpg)
+}
+
+.ico6{
+    background-image: url(../img/ico6.jpg)
+}
+
 #section_plans{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/image-card-3-temporal.jpg);
     background-repeat: no-repeat;
