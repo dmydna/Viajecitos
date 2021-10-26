@@ -20,8 +20,8 @@
 :root{
     --content : #efefef;
     --none: none;
-    --primary: crimson;
-    --secondary: none;
+    --primary: #dc143c;
+    --secondary: #dc146b;
 }
 
 html {
@@ -536,7 +536,7 @@ footer .main_nav{
 }
 
 #section_plans{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/image-card-3-temporal.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/paquete_especial.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -824,7 +824,7 @@ input[type="text" i], textarea{
 
 .ads{
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/image-card-3-temporal.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/oferta_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
