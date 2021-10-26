@@ -200,7 +200,7 @@ header a{
 
 
 .hero_img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/image_guide.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header_home.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
