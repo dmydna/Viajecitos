@@ -895,7 +895,7 @@ input[type="text" i], textarea{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    height: 60px;
+    height: 57px;
 }
 
 
@@ -991,7 +991,14 @@ strong{
 }
 
 .card_ico{
-    height: 50%;
+    height: 50%;    
+}
+
+#section_us .card_ico{transition: all .3s ease-out}
+#section_us .card_ico:hover {
+    transform: scale(1.1) rotate( -1.5deg)!important;
+    transition: all .3s ease-out!important;
+    opacity: .9;
 }
 
 
