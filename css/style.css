@@ -309,11 +309,11 @@ header a{
 } */
 
 
-/*?    Cards     pLANS*/
+/*?    Pequetes Especiales     */
 
 
 
-#section_plans .box {
+#section_plans .card {
     margin: 0 10px;
     flex: 25%;
     height: 400px; 
@@ -325,7 +325,7 @@ header a{
     justify-content: space-evenly;
 }
 
-#section_plans .box:hover{
+#section_plans .card:hover{
     cursor: pointer;
     transform: translateY(-15px);
     transition: transform .5s;
@@ -338,7 +338,7 @@ header a{
 
 .media_img{
     background-color: var(--content);
-    background-image: url(../img/pexels-fauxels-3184418.jpg);
+    /* background-image: url(../img/pexels-fauxels-3184418.jpg); */
     background-position: center;
     background-size: cover;
     flex: 0 0 50%;
@@ -421,7 +421,7 @@ footer .main_nav{
     color: gray!important;width: 50%;margin-inline: auto;
 }
 
-.box{ 
+.card{ 
     width: 250px;
     height: 350px;
     background-color: white;
@@ -435,7 +435,7 @@ footer .main_nav{
     margin-bottom: 20px;
 }
 
-.box_ico{
+.card_ico{
     height: 100%;
     background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 58%)), url(../img/pexels-ron-lach-8440066.jpg);
     background-position: center;
@@ -822,6 +822,9 @@ input[type="text" i], textarea{
     color: white;
 }
 
+.ads .container {
+    padding: 10vh 0 10vh;
+}
 
 /*? Destinos*/
 
@@ -860,21 +863,6 @@ input[type="text" i], textarea{
 }
 
 
-
-.inner_text {
-    opacity: 0;
-    /* background: linear-gradient(to bottom,transparent, #eda41c);
-    background: linear-gradient(to bottom,transparent, var(--primary)); */
-    position: absolute;
-    /* top: 0; */
-    bottom: 0;
-    padding: 20px;
-    /* padding-top: 80%; */
-    transition: all 1s;
-    /* width: 100%;
-    height: 100%; */
-}
-
 .inner_text p {
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -883,6 +871,7 @@ input[type="text" i], textarea{
     overflow: hidden;
     height: 60px;
 }
+
 
 
 
@@ -904,18 +893,18 @@ strong{
     border: 0;
 }
 
-.box:hover .inner_text{
+.card:hover .inner_text{
     opacity: 1;
     visibility: visible;
     transition: all 1s;
 }
-.box:hover .text_float{
+.card:hover .text_float{
     opacity: 0;
     transition: opacity 1s;
 }
 
 
-.box_ico::after{ 
+#section_tour .card_ico::after{ 
     content: "";
     top: 0;
     bottom: 0;
@@ -928,16 +917,22 @@ strong{
 } 
 
 
-#section_tour .box:hover .box_ico::after{
+#section_tour .card:hover .card_ico::after{
     opacity: 1;
     transition: all 1s;
-}  
+} 
+
+#section_tour .card_ico{
+    height: 100%;
+}
 
 
 /* Viaja con Nosotros*/
 
 
-.about_us .inner_text {
+/*?    ex about_us .innert*/
+
+.inner_text {
     opacity: 1;
     position: relative;
     padding-top: 10%;
@@ -946,9 +941,30 @@ strong{
     width: 100%;
     color: gray;
     text-align: center;
+    padding: 20px;
 }
 
-.about_us .box_ico{
+
+/*?--- Original innert_text*/
+
+.over_text {
+    opacity: 0;
+    /* background: linear-gradient(to bottom,transparent, #eda41c);
+    background: linear-gradient(to bottom,transparent, var(--primary)); */
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    padding: 20px;
+    /* padding-top: 80%; */
+    transition: all 1s;
+    /* width: 100%;
+    height: 100%; */
+    background-color: transparent;
+    text-align: unset;
+    color: white;
+}
+
+.card_ico{
     height: 50%;
 }
 
@@ -962,7 +978,7 @@ strong{
     padding: 0;
     justify-content: unset;
 }
-.img_end .box {
+.img_end .card {
     height: 195px;
     width: calc(100% /6);
     border: 0;
@@ -970,11 +986,27 @@ strong{
     border-radius: 0;
 }
 
+.img_end .card_ico{
+    height: 100%;
+}
+
 .desc{
     color:gray;
     text-align: center;
 }
 
+
+/*?---Sections Plans IMGS*/
+
+.card_bg{
+    background-image: url(../img/image-card-1.jpg);
+}
+.card_bg2{
+    background-image: url(../img/image-card-2-temporal.jpg);
+}
+.card_bg3{
+    background-image: url(../img/image-card-3-temporal.jpg);
+}
 
 
 
@@ -1106,7 +1138,7 @@ strong{
     .btn_contacto button{
         display: none;
     }
-    #section_plans .box{
+    #section_plans .card{
         flex: 100%;
         margin: 10px;
     }
@@ -1149,7 +1181,7 @@ strong{
     .contact_form{
         flex: 100%;
     }
-    .box{
+    .card{
         width: 100%;
     }
     .destinations{
@@ -1171,13 +1203,3 @@ strong{
 }
 
 
-
-.card_bg{
-    background-image: url(../img/image-card-1.jpg);
-}
-.card_bg2{
-    background-image: url(../img/image-card-2-temporal.jpg);
-}
-.card_bg3{
-    background-image: url(../img/image-card-3-temporal.jpg);
-}
