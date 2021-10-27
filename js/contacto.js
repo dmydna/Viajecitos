@@ -47,6 +47,7 @@ const campoValidacion = (expresion, input, campo) => {
     if (expresion.test(input.value)){
         document.getElementById(`grupo_${campo}`).classList.remove("form_grupo_incorrecto")
         document.getElementById(`grupo_${campo}`).classList.add("form_grupo_correcto")
+        document.getElementById("form_mensaje").classList.remove("form_mensaje_activo")
         document.querySelector(`#grupo_${campo} i`).classList.add("fa-check-circle")
         document.querySelector(`#grupo_${campo} i`).classList.remove("fa-times-circle")
         document.querySelector(`#grupo_${campo} .form_input_error`).classList.remove("form_input_error_activo")
