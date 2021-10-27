@@ -13,6 +13,7 @@ const campos = {
     nombre: false,
     apellido: false,
     contraseña: false,
+    contraseña2: false,
     email: false,
     numero: false
 }
@@ -71,12 +72,14 @@ const contraseñaValidacion = () => {
         document.querySelector(`#grupo_contraseña2 i`).classList.add("fa-times-circle")
         document.querySelector(`#grupo_contraseña2 .form_input_error`).classList.add("form_input_error_activo")
         campos["contraseña"] = false;
+        campos["contraseña2"] = false;
     }else{
         document.getElementById(`grupo_contraseña2`).classList.remove("form_grupo_incorrecto")
         document.getElementById(`grupo_contraseña2`).classList.add("form_grupo_correcto")
         document.querySelector(`#grupo_contraseña2 i`).classList.add("fa-check-circle")
         document.querySelector(`#grupo_contraseña2 i`).classList.remove("fa-times-circle")
         document.querySelector(`#grupo_contraseña2 .form_input_error`).classList.remove("form_input_error_activo")
+        campos["contraseña"] = true;
         campos["contraseña2"] = true;
     }
 }
@@ -99,6 +102,9 @@ formulario.addEventListener("submit", (e) => {
 
         document.querySelectorAll(".form_grupo_correcto").forEach((icono) => {
             icono.classList.remove("form_grupo_correcto");
+        })
+        document.getElementById("form_btn").click(() => {
+            window.location.href = "../index.html"
         })
     }else{
         document.getElementById("form_mensaje").classList.add("form_mensaje_activado");
