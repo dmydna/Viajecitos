@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll("#formulario input")
 
 const expresiones = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, //? Letras y espacios, pueden llevar acentos.
-    apellido: /^[a-zA-ZÀ-ÿ\s]{2,40}$/,
+    apellido: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
     contraseña: /^.{4,12}$/, //? 4 a 12 digitos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     numero: /^\d{7,14}$/ //? 7 a 14 numeros.
@@ -66,7 +66,7 @@ const contraseñaValidacion = () => {
     const inputContraseña1 = document.getElementById("contraseña")
     const inputContraseña2 = document.getElementById("contraseña2")
 
-    if(inputContraseña1.value !== inputContraseña2.value){
+    if(inputContraseña1.value !== inputContraseña2.value || inputContraseña1.value == ""){
         document.getElementById(`grupo_contraseña2`).classList.add("form_grupo_incorrecto")
         document.getElementById(`grupo_contraseña2`).classList.remove("form_grupo_correcto")
         document.querySelector(`#grupo_contraseña2 i`).classList.remove("fa-check-circle")
@@ -92,9 +92,17 @@ inputs.forEach((input) => {
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault()
+
+    function toVerificacion() {
+        let url = "../verificacion.html"
+        window.location.href = url
+    }
+
     console.log(campos.nombre, campos.apellido, campos.email, campos.numero, campos.contraseña)
     if(campos.nombre && campos.apellido && campos.email && campos.numero && campos.contraseña){
         formulario.reset();
+        // location.reload()
+        toVerificacion()
         
         document.getElementById("form_mensaje_exito").classList.add("form_mensaje_exito_activo");
         setTimeout (() => {

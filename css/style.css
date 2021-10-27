@@ -749,6 +749,7 @@ input[type="text" i], textarea{
     cursor: pointer;
     font-weight: bold;
     margin: 48px 0px;
+    transition: .4s ease all;
 }
 
 .btn_cn {

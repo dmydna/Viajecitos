@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-nosotros.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
+    <title>Gracias por responder</title>
+</head>
+
+<body onload="redireccionar()">
+    <header id="top">
+        <div class="header_nav">
+            <nav class="main_nav row">
+                <div class="logo">Viajecitos</div>
+                <ul class="main_menu" id="nav_menu">
+                    <li class="menu_item" onclick="window.location='./nosotros.html'">Nosotros</li>
+                    <li class="menu_item" onclick="window.location='./viajes.html'">Viajes</li>
+                    <li class="menu_item" onclick="window.location='#'">Oficinas</li>
+                </ul>
+                <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
+                <div class="burger_container">
+                    <div class="burger">
+                        <svg class='burger_svg' viewBox="0 0 100 80" width="35" height="35">
+                            <rect class="burger_line" y="00" width="100" height="10"></rect>
+                            <rect class="burger_line" y="30" width="100" height="10"></rect>
+                            <rect class="burger_line" y="60" width="100" height="10"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- hero 
+    https://www.w3schools.com/howto/howto_css_hero_image.asp
+    -->
+        <div class="hero_img" style="background-image: url(./img/form_bg.jpg); height: 100vh;">
+            <div class="hero_text">
+                <h1 class="hero_title">Gracias por responder</h1>
+                <h2>Volviendo al inicio</h2>
+            </div>
+        </div>
+    </header>
+    <script>
+        function redireccionar(){
+            setTimeout("location.href='./index.html'", 3000)
+        }
+    </script><!--? pequeño script que vuelve a la home -->
+</body>
+
+</html>
