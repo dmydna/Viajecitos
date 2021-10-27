@@ -15,7 +15,7 @@
 <body>
 
 
-    <header id="top">
+    <!-- <header id="top">
         <div class="header_nav">
             <nav class="main-nav row">
                 <div class="logo" onclick="window.location='./index.html'">Viajecitos</div>
@@ -49,47 +49,46 @@
             </div>
  
         </div>
+    </header> -->
 
-        <style>
-
-            .search_bar{
-                width: calc(100% - 200px);
-                padding: 10px;
-                margin: none;
-                border: none;
-                outline: none;
-            }
-            .search_btn{
-                width: 100px;
-                padding: 10px;
-                box-sizing: border-box;
-                color: white;
-                background-color: crimson;
-                font-weight: bold;
-                border: 0;
-                border-radius: 2.5px;
-                margin-left: -5px;
-                cursor: pointer;
-                transition: background-color 1s;
-            }
-
-            .search_btn:hover{
-                background-color: rgb(220, 20, 60);
-                transition: background-color 1s;
-            }
-
-            .hero_img{
-                height: 80vh;
-            }
-            .search_container{
-                margin: 49px 0;
-            }
-            .hero_content{
-                max-width: 600px;
-                margin: 0 auto;
-            }
-
-        </style>
+    <header id="top">
+        <div class="header_nav">
+            <nav class="main_nav row">
+                <div class="logo">Viajecitos</div>
+                <ul class="main_menu" id="nav_menu">
+                    <li class="menu_item" onclick="window.location='./nosotros.html'">Nosotros</li>
+                    <li class="menu_item" onclick="window.location='./viajes.html'">Viajes</li>
+                    <li class="menu_item" onclick="window.location='#'">Oficinas</li>
+                </ul>
+                <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
+                <div class="burger_container">
+                    <div class="burger">
+                        <svg class='burger_svg' viewBox="0 0 100 80" width="35" height="35">
+                            <rect class="burger_line" y="00" width="100" height="10"></rect>
+                            <rect class="burger_line" y="30" width="100" height="10"></rect>
+                            <rect class="burger_line" y="60" width="100" height="10"></rect>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            <!-- hero 
+    https://www.w3schools.com/howto/howto_css_hero_image.asp
+    -->
+        <div class="hero_img">
+            <div class="hero_text">
+                    <div class="hero_content">
+                            <h1 class="hero_title">Empieza armar tu viaje</h1>
+                            <h2>conoce nuestro planes</h2>
+                    </div>
+    <div class="search_container">
+                        <input class="search_bar" type="text" placeholder="Encuentra tu destino..." name="search">
+                        <button class="search_btn" type="submit">buscar</button>
+                   </div>
+            </div>
+        </div>
+    </header>
+        
 
 <!--
 
@@ -109,6 +108,47 @@
 
     </header>
 -->
+
+<style>
+
+    .search_bar{
+        width: calc(100% - 200px);
+        padding: 10px;
+        margin: none;
+        border: none;
+        outline: none;
+    }
+    .search_btn{
+        width: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        background-color: crimson;
+        font-weight: bold;
+        border: 0;
+        border-radius: 2.5px;
+        margin-left: -5px;
+        cursor: pointer;
+        transition: background-color 1s;
+    }
+
+    .search_btn:hover{
+        background-color: rgb(220, 20, 60);
+        transition: background-color 1s;
+    }
+
+    .hero_img{
+        height: 80vh;
+    }
+    .search_container{
+        margin: 49px 0;
+    }
+    .hero_content{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+</style>
     <main class="body_main">
 
 
@@ -116,7 +156,7 @@
     <h2 class="title_cards row">Nuestros viajes para usted</h2>
     <br>        
         <div class="cards_container row">
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f1"></div>
                 <div class="card_text">
                     <h3>NUEVA YORK - 200 USD</h3>
@@ -126,7 +166,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f2"></div>
                 <div class="card_text">
                     <h3>TOKYO - 200 USD</h3>
@@ -136,7 +176,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f3"></div>
                 <div class="card_text">
                     <h3>BARCELONA - 200 USD</h3>
@@ -146,7 +186,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f4"></div>
                 <div class="card_text">
                     <h3>EL CAIRO - 300 USD</h3>
@@ -162,7 +202,7 @@
 <br>
 <br>
 <div class="cards_container row hidden">
-    <div class="card">
+    <div class="card_grid">
         <div class="card_image f5"></div>
         <div class="card_text">
             <h3>ISLA DE PASCUA - 450 USD</h3>
@@ -172,7 +212,7 @@
             <button class="btn_hover bn18">Comprar</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card_grid">
         <div class="card_image f6"></div>
         <div class="card_text">
             <h3>MOSCÚ - 280 USD</h3>
@@ -182,7 +222,7 @@
             <button class="btn_hover bn18">Comprar</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card_grid">
         <div class="card_image f7"></div>
         <div class="card_text">
             <h3>BHUTAN- 320 USD</h3>
@@ -192,7 +232,7 @@
             <button class="btn_hover bn18">Comprar</button>
         </div>
     </div>
-    <div class="card">
+    <div class="card_grid">
         <div class="card_image f8"></div>
         <div class="card_text">
             <h3>DUBAI - 400 USD</h3>
@@ -207,7 +247,10 @@
     <div class="btn_mas btn_hover bn18">mostrar mas</div>
 </div>
 
-<section id="section" class="section_media ads">
+
+  <!-- ADS --> 
+
+  <section id="section_media" class="section_container ads">
     <div class="container row">
         <div class="media flex" loading="lazy">
             <div class="media_img md_bg"></div>
@@ -219,12 +262,13 @@
             </div>
         </div>
     </div>
-</section>  
+</section>      
+
 
         <h2 class="title_cards row">Los mejores hoteles</h2>
         <br>
         <div class="cards_container row">
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f9"></div>
                 <div class="card_text">
                     <h3>Citizenm New York Times Square</h3>
@@ -234,7 +278,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f10"></div>
                 <div class="card_text">
                     <h3>Hotel Niwa Tokyo</h3>
@@ -244,7 +288,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f11"></div>
                 <div class="card_text">
                     <h3>Catalonia Ramblas</h3>
@@ -254,7 +298,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f12"></div>
                 <div class="card_text">
                     <h3>Ramses Hilton</h3>
@@ -268,7 +312,7 @@
         <br>
         <br>
         <div class="cards_container row hidden">
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f13"></div>
                 <div class="card_text">
                     <h3>Hotel National, a Luxury Collection Hotel, Moscow</h3>
@@ -278,7 +322,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f14"></div>
                 <div class="card_text">
                     <h3>Jumeirah Emirates Towers</h3>
@@ -288,7 +332,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f15"></div>
                 <div class="card_text">
                     <h3>Maldron Hotel - Parnell Square</h3>
@@ -298,7 +342,7 @@
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
-            <div class="card">
+            <div class="card_grid">
                 <div class="card_image f16"></div>
                 <div class="card_text">
                     <h3>Mirador del Lago Hotel</h3>
@@ -329,24 +373,64 @@
 
 
     </script>
-    <footer class="page-footer">
-        <div class="nav-footer row">
-                <div class="main-menu" style="padding: 0;">
-                    <ul class="main-nav" style="font-size: 14px;font-weight: normal;">
-                        <li class="menu-item">Home</li>
-                        <li class="menu-item">About</li>
-                        <li class="menu-item">Contact</li>
-                    </ul>
-                    <ul class="social-nav" style="margin-bottom: 50px;">
-                        <li class="menu-item"><a class="fa fa-facebook" href="#" target="_blank" aria-hidden="true"></a></li>
-                        <li class="menu-item"><a class="fa fa-twitter" href="#" target="_blank" aria-hidden="true"></a></li>
-                        <li class="menu-item"><a class="fa fa-pinterest" href="#" target="_blank" aria-hidden="true"></a></li>
-                        <li class="menu-item"><a class="fa fa-instagram" href="#" target="_blank" aria-hidden="true"></a></li>
-                    </ul>
+<footer class="page-footer">
+    <div class="flex row">
+        <div class="contact_area">
+                <div class="contact-header">
+                    <h2>Nuestros Contactos</h2>
+                    <p class="item_desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
+                    </p>
                 </div>
-        </div>
 
-    </footer>
+            <div class="contact_body">
+                <ul class="contact_main">
+                    <li class="contact_item">
+                        <div class="contact_icon">
+                            <a class='fab fa-whatsapp' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item_desc">Whatsapp: 15111-111</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon">
+                            <a class='fab fa-github' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item_desc">Github: dank01az</div>
+                    </li>
+                    <li class="contact_item">
+                        <div class="contact_icon">
+                            <a class='fa fa-twitter' href="#" target="_blank"></a>
+                        </div>
+                        <div class="item_desc">Twiter: @little_turtle</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_form">
+            <h2 class="title">Sucursales</h2>
+            <div class="form-content">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.230994586465!2d-58.3669298!3d-34.6027012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1634236669790!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> 
+        </div>
+    </div>
+<div class="nav-footer">
+    <div class="main_menu row" style="padding: 0;">
+        <ul class="main_nav" style="font-size: 14px;font-weight: normal;">
+            <li class="menu_item">Nosotros</li>
+            <li class="menu_item">Viajes</li>
+            <li class="menu_item">Oficinas</li>
+            <li class="menu_item">Contacto</li>
+        </ul>
+        <ul class="social-nav">
+            <li class="menu_item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
+            <li class="menu_item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+        </ul>
+    </div>
+</div>
+
+</footer>
     <div class="back_top" onclick="back_top()">
         <i class="fas fa-chevron-up"></i>
     </div>

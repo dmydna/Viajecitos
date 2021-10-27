@@ -111,3 +111,5 @@ function navbarColor(){
     }
 }
 
+
+let card_top = ["","", "", "",""]  
