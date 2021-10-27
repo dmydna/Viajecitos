@@ -102,8 +102,10 @@ formulario.addEventListener("submit", (e) => {
 
         document.querySelectorAll(".form_grupo_correcto").forEach((icono) => {
             icono.classList.remove("form_grupo_correcto");
+
+        document.getElementById("form_mensaje").classList.remove("form_mensaje_activo")
         })
     }else{
-        document.getElementById("form_mensaje").classList.add("form_mensaje_activado");
+        document.getElementById("form_mensaje").classList.add("form_mensaje_activo");
     }
 });
