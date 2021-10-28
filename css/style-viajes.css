@@ -20,16 +20,6 @@ body {
 }
 
 
-.body_main {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: roboto, sans-serif;
-  /* display: flex;
-      justify-content: center;
-      align-items: center; */
-}
-
 
 /*? - Nav   */
 
@@ -43,6 +33,17 @@ header a{
 .hero_img{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pag_viajes.jpg);
   height: 40vh;
+}
+
+.hero_img{
+  height: 80vh;
+}
+.search_container{
+  margin: 49px 0;
+}
+.hero_content{
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 
@@ -82,17 +83,14 @@ header a{
 
 .card_grid {
   /*? grid */
-
   display: grid;
-  /* grid-template-columns: 20rem; */
   grid-template-rows:  13rem 10rem 5rem;
   grid-template-areas: "image" "text" "boton";
-
   /*? estilo de la card */
   border-radius: .4rem;
   background-color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */
   transition: 0.5s ease;
   cursor: pointer;
   overflow: hidden;
@@ -100,15 +98,14 @@ header a{
 
 .card_grid:hover {
   transform: scale(1.03);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%);
+  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%); */
 }
 
 .card_grid div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: center; */
   justify-content: space-around;
 }
 
@@ -198,6 +195,7 @@ header a{
   text-align: center;
   grid-area: text;
   font-family: "Maven Pro", sans-serif;
+  padding: 0 10px;
 }
 
 .card_text h2 {
@@ -210,7 +208,6 @@ header a{
 
 .card_btn {
   grid-area: boton;
-  /* margin-bottom: 1rem; */
 }
 
 .card_btn button {
@@ -256,14 +253,6 @@ header a{
 }
 
 
-.btn_mas{ 
-  width: 300px;
-  padding: 15px;
-  margin-inline: auto;
-}
-
-
-
 .separador {
   padding: 5em 0;
 }
@@ -282,33 +271,43 @@ header a{
 }
 
 
+/*?  Search_bar    */
+
+.search_bar{
+  width: calc(100% - 200px);
+  padding: 10px;
+  margin: none;
+  border: none;
+  outline: none;
+}
+.search_btn{
+  width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  background-color: crimson;
+  font-weight: bold;
+  border: 0;
+  border-radius: 2.5px;
+  margin-left: -5px;
+  cursor: pointer;
+  transition: background-color 1s;
+  position: relative;
+}
+
+.search_btn:hover{
+  background-color: rgb(220, 20, 60);
+  transition: background-color 1s;
+}
 
 
   
 @media screen and (max-width: 780px){
  
 
-  /* .media {
-    flex-wrap: wrap;
-    border:0;
-    margin: 0;       
-    box-shadow: none;
-}
-.media_img{
-   flex: 100%;
-}
-
-.media_content{
-    padding-bottom: 60px;
-}   
-
-.container{
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} */
-
   .card_grid{
       flex: 100%;
+      box-shadow: none;
   }
   .active a {
       color: black;
@@ -321,34 +320,25 @@ header a{
   .card:hover{
     transform: scale(1.02);
   }
-  /* .nav_main{
-    display: none;
-  }
-  .btn_contacto{
-    display: none;
-  } */
+
   .toggle_hidden{
     max-height: calc(2*(28rem + 2rem));
   }
-  /* .hero_text{
-    width: 100%;
-  } */
+
   .search_container{
     width: 100%;
   }
+  .hero_text {
+    width: 100%;
+    padding: 0;
+}
+
 
 }
 
 
 @media screen and (max-width: 480px){
-  /* .hero_img{
-      height: calc(100vh - 58px);
-      height: 100vh!important;
-  } */
 
-  /* .contact-form{
-      flex: 100%;
-  } */
   .cards_container{
     grid-template-columns: repeat(1, 1fr);
     gap: .8rem;
@@ -356,7 +346,14 @@ header a{
   .toggle_hidden{
     max-height: calc(4*(28rem + 2rem));
   }
+  .card_grid{
+    margin-bottom: 5em;
+    border-radius: 0;
+  }
+  .search_bar{
+    width: calc(100% - 130px);
+  }
+  
 
 }
-
 

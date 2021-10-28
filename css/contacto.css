@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Maven+Pro&display=swap');
+@import url(./style.css);
+
 
 *{
     margin: 0;
@@ -159,11 +161,83 @@ body{
     border: 3px solid red;
 }
 
+/* fix contacto.css*/
+
+.contacto .fixrow{
+    max-width: 1100px;margin: 0 auto 0;
+}
+.contacto .btn_contacto button {
+    line-height: initial;
+}
+.header_nav{
+    background-color: white;
+    color: black;
+    position: relative;
+}
+.burger_svg {
+    fill: black;
+}
+.main{
+    min-height: 100vh;
+}
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/form_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+main{position: relative;}
+.container_form{
+    z-index: 2;
+    position: relative;
+}
+.header_form{
+    border-radius: 2.5px 2.5px 0 0;
+    height: auto;
+    margin-bottom: -3px;
+    background: -webkit-linear-gradient(180deg, rgb(220, 20, 60), rgb(254, 78, 8));
+    background: linear-gradient(180deg, rgb(220, 20, 60), rgb(254 78 8 / 65%));
+}
+.formulario{
+    border-radius: 0 0 .3rem .3rem;
+    box-shadow: none;
+}
+.container_form{
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%)
+}
+.css_fix .rounded {
+    height: unset;
+}
+.css_fix .nav-footer{
+    line-height: 68px;
+}
+header a {
+    color: black!important;
+}
+input[type="text" i], textarea{
+    color: black;
+}
+.nav_fixed .header_nav{
+    position: relative;
+}
+
+
 /*? media query */
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:780px) {
     .formulario{
         grid-template-columns: 1fr;
+    }
+    .container_form{
+        box-shadow: none!important;
     }
 
     .form_grupo_btn_enviar,
@@ -174,15 +248,8 @@ body{
     .form_btn{
         width: 100%;
     }
+    .header_form{
+        background: transparent!important;
+    }
+
 }
-
-/*? footer */
-
-/* footer{
-    background-color: #000000; 
-    height: 100px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */

@@ -1,7 +1,7 @@
 
 
 
-  let pageloader = document.querySelector("#pageloader");
+
   let pageLoaderHTML = `
 <div id="pageloader">
   <div class="loading">
@@ -17,34 +17,34 @@
 </div>` ;
 
 
+function page_load() {
+  var page_con = document.body
+  page_con.insertAdjacentHTML("afterbegin", pageLoaderHTML);
+  document.body.classList.add('load_active')
+  let pageloader = document.querySelector('#pageloader')
   if(pageloader){
-      fake_load();
+    fake_load(pageloader)
   }
-  function fake_load(){
-  setTimeout(function(){ pageLoader() }, 1500);
+}
 
-  //document.body.style.overflow = 'hidden'
-
-  function pageLoader() { 
-        pageloader.style.opacity = '0';                 
+function fake_load(loader){
+  setTimeout(function(){ pageLoader(loader) }, 1500)
+  function pageLoader(page_loader) { 
+        page_loader.style.opacity = '0';                 
         setTimeout(function(){ 
           pageloader.style.display = 'none';}, 500);
-          //document.body.style.overflow = 'unset'
+          document.body.classList.remove('load_active')
 
     };  
   }
 
-
-
+page_load()
+  
 let burger = document.querySelector(".burger"),
     list_nav = document.querySelector("#nav_menu");
 
-
 burger.addEventListener("click", function() {
-      list_nav.classList.toggle('active');
-      burger.classList.toggle('burger_active');
-      document.body.classList.toggle('on_load');
-      document.querySelector(".burger__line").classList.toggle('ln_black')
+      document.body.classList.toggle('nav_active');
 });
 
 
@@ -73,7 +73,6 @@ function back_top(){
 
 var prevScrollpos = window.pageYOffset;
 
-
 function prev_navbar(){ 
   var currentScrollPos = window.pageYOffset;
   if(currentScrollPos > headerCnHeight){
@@ -98,18 +97,30 @@ let header_nav = document.querySelector('.header_nav'),
     HeaderCn = document.querySelector('header'),
     headerCnHeight = HeaderCn.clientHeight,
     altoDeScroll = document.documentElement.scrollTop;
-header_nav.classList.add("n_fixed")
+    document.body.classList.add("nav_fixed")
 
 function navbarColor(){
      let scroll_top = document.documentElement.scrollTop;
     if ( scroll_top > 58) {
         //scroll_top > headerCnHeight - 58
-        header_nav.classList.add("nav_js");
+        document.body.classList.add("nav_js");
       }
     else{  
-        header_nav.classList.remove("nav_js")
+        document.body.classList.remove("nav_js")
     }
 }
 
+/*? viajes.html */
 
-let card_top = ["","", "", "",""]  
+let page_viajes = document.querySelector('.page_viajes')
+if (page_viajes){
+  console.log('pagina de viajes')
+  let btn_mas = document.querySelectorAll('.btn_mas'),
+  hidden = document.querySelectorAll('.hidden');
+  for (let i = 0; i < btn_mas.length; i++) {
+       btn_mas[i].addEventListener('click', function(){    
+       hidden[i].classList.toggle('toggle_hidden');
+  });
+  }
+}
+

@@ -11,6 +11,15 @@ a {
   color: #000000;
 }
 
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+
+
+.row {
+  max-width: 1100px;
+  margin: 0 auto 0;
+}
 
 .hero_img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/about_us.jpg);
@@ -21,20 +30,18 @@ a {
     position: relative;
 }
 
-/*? body */
 
-body {
-  font-family: "Maven Pro", sans-serif;
+.hero_img{
+  height: 80vh;
+}
+.search_container{
+  margin: 49px 0;
+}
+.hero_content{
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/*? main */
-
-.row {
-  max-width: 1100px;
-  margin: 0 auto 0;
-}
-
-/*? body about */
 
 article h1 {
   display: flex;
@@ -56,3 +63,4 @@ hr {
 .main_nav{
   line-height: 40px;
 }
+
