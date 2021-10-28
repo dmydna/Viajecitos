@@ -932,7 +932,6 @@ input[type="text" i], textarea{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     height: 57px;
 }
 
@@ -999,13 +998,15 @@ strong{
 .inner_text {
     opacity: 1;
     position: relative;
-    padding-top: 10%;
     background: white;
     color: black;
     width: 100%;
     color: gray;
     text-align: center;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 .5rem;
 }
 
 
