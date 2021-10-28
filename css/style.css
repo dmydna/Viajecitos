@@ -424,6 +424,10 @@ footer .main_menu{
 
 
 }
+footer .menu_item a{
+    color: white;
+}
+
 footer .main_nav{
     line-height: 0;
     line-height: 40px;

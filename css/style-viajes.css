@@ -19,8 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 /*? - Nav   */
 
 header a{
@@ -263,11 +261,13 @@ header a{
 .hidden{
   max-height: 0;
   transition: max-height 0.5s;
+  transition: all 1s;
 }
 
 .toggle_hidden{
     max-height: 28rem;
     transition: max-height 0.5s;
+    transition: all 1s;
 }
 
 
