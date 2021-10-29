@@ -251,6 +251,10 @@ header a{
 }
 
 
+.btn_mas{
+  width: 300px;
+}
+
 .separador {
   padding: 5em 0;
 }
@@ -304,7 +308,9 @@ header a{
   
 @media screen and (max-width: 780px){
  
-
+  .btn_mas{
+    width: 50%;
+  }
   .card_grid{
       flex: 100%;
       box-shadow: none;

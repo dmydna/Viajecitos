@@ -34,6 +34,10 @@ body {
     padding: 0;
 }
 
+body.nav_active{
+    overflow: hidden;
+}
+
 .load_active{
     overflow: hidden;
 } 
@@ -369,6 +373,18 @@ header a{
 }
 
 
+#section_plans .card_ico:after {
+    content: "50% off";
+    top: 10%;
+    right: 0;
+    position: absolute;
+    width: 75px;
+    height: 45px;
+    background: var(--primary);
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+}
 
 .media_img{
     background-color: var(--content);
@@ -665,6 +681,7 @@ footer input[type='submit']{
     bottom: 10px;
     right: 10px;
     cursor: pointer;
+    opacity: .8;
 }
 .back_top i{
     position: absolute;
@@ -894,6 +911,11 @@ input[type="text" i], textarea{
     padding: 10vh 0 10vh;
 }
 
+.ads .media_header {
+    font-weight: bold;
+    font-size: 50px;
+}
+
 /*? Destinos*/
 
 
@@ -937,6 +959,7 @@ input[type="text" i], textarea{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     height: 57px;
+    overflow: hidden;
 }
 
 
@@ -955,9 +978,10 @@ strong{
 
 .inner_text .btn_tour{
     margin: 0;
-    padding: 10px;
+    padding: 7px 0;
     background-color: black;
     border: 0;
+    width: 90px;
 }
 
 .card:hover .inner_text{
@@ -1125,7 +1149,9 @@ strong{
   
   @media screen and (max-width: 780px){
 
-
+    .main_menu{
+        justify-content: space-around;
+    }
     .nav_active .main_menu{
         cursor: pointer;
         left: 0!important;
@@ -1231,6 +1257,9 @@ strong{
     .img_end .card:nth-child(5),
     .img_end .card:nth-child(6){
         display: none;
+    }
+    .btn_mas{
+        width: 50%;
     }
 
 }
