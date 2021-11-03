@@ -310,6 +310,10 @@ header a{
  
   .btn_mas{
     width: 50%;
+    display: none;
+  }
+  .hidden{
+    display: none!important;
   }
   .card_grid{
       flex: 100%;

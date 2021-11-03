@@ -174,9 +174,15 @@ body{
     color: black;
     position: relative;
 }
+
 .burger_svg {
     fill: black;
 }
+
+.menu_item{
+    text-shadow: none!important;
+}
+
 .main{
     min-height: 100vh;
 }

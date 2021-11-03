@@ -157,6 +157,7 @@ header a{
 }
 
 
+
 .nav_fixed .header_nav {
     color: white;
     top:0;
@@ -211,6 +212,7 @@ header a{
 }
 
 
+
 .logo{
 
     /*margin-right: auto;*/
@@ -231,6 +233,14 @@ header a{
     cursor: pointer;
 }
 
+.nav_fixed .menu_item{
+    text-shadow: 1px 0px 3px black;
+}
+
+.nav_js .menu_item{
+    text-shadow: none;
+}
+
 .contact {
     display: none;
 }
@@ -238,12 +248,13 @@ header a{
 
 
 .hero_img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url(../img/header_home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url(../img/header_home.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    text-shadow: 1px 2px 3px black;
 }
 .hero_text{
     position:absolute;
@@ -797,12 +808,12 @@ input[type="text" i], textarea{
 
 .btn_tour{
     border: 2px solid;
-    border-radius: 6rem;
+    border-radius: .9rem;
     outline: 0;
     display: inline-block;
-    padding: 0.63rem 1.56rem;
+    padding: 0.43rem 1.23rem;
     color: #FFF;
-    background-color: transparent;
+    background-color: rgb(0 0 0 / 10%);
     text-align: center;
     cursor: pointer;
     font-weight: bold;
@@ -1261,7 +1272,10 @@ strong{
     .btn_mas{
         width: 50%;
     }
-
+    .nav_fixed .menu_item,.nav_js .menu_item{
+        text-shadow: none;
+    }
+    
 }
 
   
