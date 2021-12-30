@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!--? etiquetas link -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +20,11 @@
     <!--? scripts -->
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <!--Slider-->
+    <script src="./js/slider.js" defer></script>
+    <link rel="stylesheet" href="./css/slider.css">
 
     <!--? title -->
     <title>Viajecitos</title>
@@ -28,18 +33,6 @@
 
 
 <body>
-    <!-- <div id="pageloader">
-        <div class="loading">
-            <div class="loading-logo">
-                <h1>Viajecitos</h1>
-            </div>
-            <div class="loading-dots">
-                <div class="dot"></div>
-                <div class="dot2"></div>
-                <div class="dot3"></div>
-            </div>
-        </div>
-    </div> -->
     <header id="top">
         <div class="header_nav">
             <nav class="main_nav row">
@@ -134,12 +127,14 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
 
 
 
-        <!-- ADS -->
+        <!-- ADS Slider -->
 
         <section id="section_media" class="section_container ads">
+        <div class="slideshow-container">    
+        <div class="slides fade ads_bg1">
             <div class="container row">
-                <div class="media flex" loading="lazy">
-                    <div class="media_img md_bg"></div>
+                <div class="media flex">
+                    <div class="media_img"></div>
                     <div class="media_content">
                         <h1 class="media_header">50% OFF</h1>
                         <h2>Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con nosotros.
@@ -149,8 +144,43 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
                                 <br>
                     </div>
                 </div>
-            </div>
+            </div>           
+        </div>
+        <div class="slides fade ads_bg2">
+            <div class="container row">
+                <div class="media flex">
+                    <div class="media_img"></div>
+                    <div class="media_content">
+                        <h1 class="media_header">Word Travel</h1>
+                        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta accusantium dolores vel?
+                        </h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur earum quibusdam perferendis magnam?<p>
+                                <br>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="slides fade ads_bg3">
+            <div class="container row">
+                <div class="media flex" >
+                    <div class="media_img"></div>
+                    <div class="media_content">
+                        <h1 class="media_header">Best Price</h1>
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor explicabo voluptate fugit!
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eveniet saepe consequuntur at animi.<p>
+                                <br>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        </div>
         </section>
+        <div class="dot_container">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
 
 
         <!-- Destinos -->
@@ -242,44 +272,10 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
             </div>
 
             <div class="separador">
-                <div class="btn_mas btn_hover bn18" onclick="window.location='./viajes.html'">Viajes</div>
-            </div>
-
-        </section>
-
-        <section style='display: none;' id="section_plans" class="section_container">
-            <div class="section_title">
-                <h2 style="color: white;">Paquetes Especiales</h2>
-            </div>
-            <div class="flex wrap row">
-                <div class="card">
-                    <div class="card_img card_bg"></div>
-                    <div class="card_content">
-                        <h2 class="card-header">NEW YORK</h2>
-                        <p>Cononce Manhantan y recorre las calles de una de las ciudad mas grandes y conocidas del
-                            mundo.</p>
+                <!-- <div class="btn_mas btn_hover bn18" onclick="window.location='./viajes.html'">Viajes</div> -->
+                <div class="show_more" onclick="window.location='./viajes.html'">
+                    <i class="fas fa-plus"></i><p>Mostrar mas</p>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card_img card_bg2"></div>
-                    <div class="card_content">
-                        <h2 class="card-header ">TOKYO</h2>
-                        <p>Dormir en un ryokan, relajarse en un onsen, contemplar el monte Fuji, ensimismarse con las
-                            luces de la ciudad o visitar sus templos, tu eliges que hacer.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_img card_bg3"></div>
-                    <div class="card_content">
-                        <h2 class="card-header ">BARCELONA</h2>
-                        <p>Ciudad europea con una gran historia, casa de artistas famosos, edificios antiguos y
-                            excelente clima.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="separador">
-                <div class="btn_mas btn_hover bn18" onclick="window.location='./viajes.html'">Viajes</div>
             </div>
 
         </section>
@@ -385,29 +381,28 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
         <div class="flex row">
             <div class="contact_area">
                 <div class="contact-header">
-                    <h2>Nuestros Contactos</h2>
+                    <h3 class="title">Nuestros Contactos</h3>
                     <p class="item_desc">
                         Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
                     </p>
                 </div>
-
                 <div class="contact_body">
                     <ul class="contact_main">
                         <li class="contact_item">
-                            <div class="contact_icon">
-                                <a class='fab fa-whatsapp' href="#" target="_blank"></a>
+                            <div class="contact_icon wpp fa-ico">
+                                <!-- <a class='fab fa-whatsapp' href="#" target="_blank"></a> -->
                             </div>
                             <div class="item_desc">Whatsapp: 15111-111</div>
                         </li>
                         <li class="contact_item">
-                            <div class="contact_icon">
-                                <a class='fab fa-github' href="#" target="_blank"></a>
+                            <div class="contact_icon git fa-ico">
+                                <!-- <a class='fab fa-github' href="#" target="_blank"></a> -->
                             </div>
                             <div class="item_desc">Github: dank01az</div>
                         </li>
                         <li class="contact_item">
-                            <div class="contact_icon">
-                                <a class='fa fa-twitter' href="#" target="_blank"></a>
+                            <div class="contact_icon twt fa-ico">
+                                <!-- <a class='fa fa-twitter' href="#" target="_blank"></a> -->
                             </div>
                             <div class="item_desc">Twiter: @little_turtle</div>
                         </li>
@@ -415,11 +410,11 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
                 </div>
             </div>
             <div class="contact_form">
-                <h2 class="title">Sucursales</h2>
+                <h3 class="title">Sucursales</h3>
                 <div class="form-content">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.230994586465!2d-58.3669298!3d-34.6027012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1634236669790!5m2!1ses-419!2sar"
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        width="100%" height="295" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -432,17 +427,16 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp
                     <li class="menu_item" ><a href="./contacto.html">Contacto</a></li>
                 </ul>
                 <ul class="social-nav">
-                    <li class="menu_item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
-                    <li class="menu_item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
-                    <li class="menu_item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
-                    <li class="menu_item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='fb fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='twt fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='pin fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='ig fa-ico' href="#" target="_blank"></a></li>
                 </ul>
             </div>
         </div>
 
     </footer>
-    <div class="back_top" onclick="back_top()">
-        <i class="fas fa-chevron-up"></i>
+    <div class="back_top">
     </div>
 </body>
 

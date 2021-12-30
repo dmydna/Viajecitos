@@ -19,6 +19,7 @@
 
 :root{
     --content : #efefef;
+    --defaul-content:#ebebeb ;
     --none: none;
     --primary: #dc143c;
     --secondary: #dc146b;
@@ -32,6 +33,11 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    background: url(../img/bg_1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #ebebeb;
 }
 
 body.nav_active{
@@ -43,7 +49,6 @@ body.nav_active{
 } 
 
 main {
-    background-color: #ebebeb;
     font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -84,6 +89,11 @@ header a{
     font-weight: bold;
 }
 
+.loading-logo img{
+    width: 230px;
+}
+
+
 #pageloader{    
     position: fixed;
     top: 0;
@@ -117,7 +127,7 @@ header a{
 
 
 
-.loading-dots .dot{
+.loading-dots .dot1{
     animation-delay: -0.30s;
 }
 .loading-dots .dot2{
@@ -248,7 +258,7 @@ header a{
 
 
 .hero_img{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url(../img/header_home.jpg);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, .10) 15%, rgba(0, 0, 0, 0.01) 25%), url(../img/header_home.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -441,6 +451,9 @@ footer{
     padding: 30px 0;
 }
 
+
+
+
 .nav-footer{
     background-color: black;
 }
@@ -448,32 +461,87 @@ footer{
 
 footer .main_menu{
     justify-content: space-between;
-
+    line-height: 20px;
 
 }
-footer .menu_item a{
+footer .main_nav .menu_item a{
     color: white;
 }
 
 footer .main_nav{
     line-height: 0;
-    line-height: 40px;
     flex-wrap: wrap;
 }
 
+footer .main_nav, .nav-footer{
+    line-height: 40px;
+}
 
-.social-nav .menu_item a {
+
+
+/*?      Font Awesome ICO      */
+
+
+
+.fa-ico {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+}
+  
+  .fa-ico::before {
+    content: "\f39e";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+  
+  
+
+  
+.fb::before{content: "\f39e";}
+.twt::before{content: "\f099";}
+.pin::before{content: "\f0d2";}
+.ig::before{content: "\f16d";}  
+.wpp::before{content: "\f232"}
+.git::before{content: "\f09b";}
+
+
+/*?      social nav      */
+
+.social-nav a{
     font-size: 20px;
     text-decoration: none;
+    color: black;
+}
+
+
+.social-nav .menu_item {padding: 0 2px 0;}
+
+.social-nav .fa-ico {
+    background-color: white;
+    border-radius: 100%;
+}
+
+
+.fa-ico:hover{
+    background: var(--primary);
     color: white;
 }
+
 
 .wrap{
     flex-wrap: wrap;
 }
 
 .section_container{
-    background-color: var(--content);
+    /* background-color: var(--content); */
 }
 .container{
     padding: 5vh 0 20vh;
@@ -505,14 +573,14 @@ footer .main_nav{
 
 .card_ico{
     height: 100%;
-    background-image: linear-gradient(to bottom, transparent, rgb(0 0 0 / 58%)), url(../img/pexels-ron-lach-8440066.jpg);
+    background-image: url(https://via.placeholder.com/250x200);
     background-position: center;
     background-size: cover;
 }
 
 /*? img de los box_ico*/
 
-/*? Recorrido */
+/*? recorrido */
 .recorrido_bg1{
     background-image: url(../img/irl_box.jpg);
 }
@@ -604,7 +672,7 @@ footer .main_nav{
 }
 
 #section_plans{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/paquete_especial.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.03)),url(../img/paquete_especial.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -617,31 +685,48 @@ footer .main_nav{
     flex: 1;
     margin: 0;
     display: inline-block;
-   transform: scale(.88);
+    padding: 0 75px 0 0
+   /* transform: scale(.88); */
 
 }
 .contact_item{
     list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    border-top: 0.1px solid rgb(128 128 128 / 34%);
 }
+
+
+.contact_item  .fa-ico::before{
+    font-size: 27px;
+}
+
 .contact_item div{
     display: inline-block;
     padding: 10px;
 }
 
-.contact_icon a {
+
+/* .contact_icon a {
     text-decoration: none;
     color: black;
-}
+} */
 .contact_icon{
-   
-    background-color: white;
-    border-radius: 2.5px;
-    font-size: 21px;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius: 2.5px!important;
+
+    /* patch */
+    background-color: transparent!important;
+    color: white!important;
 }
 
 .contact_form{
     flex: 1;
-    transform: scale(.88);
+    padding-bottom: 55px;
+    /* transform: scale(.88); */
 }
 
 .form_content{
@@ -656,7 +741,9 @@ footer .main_nav{
     font-size: 14px;
     color: #aaa;
     line-height: 24px;
-    margin: 0 0 20px;
+    /* margin: 0 0 20px; */
+    width: 75%;
+    font-size: 13px;
 }
 
 footer textarea{
@@ -682,25 +769,43 @@ footer input[type='submit']{
     cursor: pointer;
 }
 
+
+
+
+
 .back_top{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     color: white;
     background-color: var(--primary);
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 35px;
+    right: 20px;
     cursor: pointer;
-    opacity: .8;
-}
-.back_top i{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    opacity: .7;
+    transition: all 1s;
 }
 
+.back_top:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+.back_top::before {
+    content: "\f077";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    font-size: 21px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
 
 .burger_container{
     display: none;
@@ -792,6 +897,13 @@ iframe{
       margin: -4px;
       margin-left: 0;
   }
+
+
+.form-content iframe {
+    border: 0;
+    border-radius: 2.5px;
+    margin-top: 8px;
+}
 
 input[type="text" i], textarea{
     color: white;
@@ -894,7 +1006,7 @@ input[type="text" i], textarea{
 
 .ads{
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/oferta_bg.jpg);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.01) 70%), url(../img/ads_bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -942,6 +1054,7 @@ input[type="text" i], textarea{
     background-color: transparent;
     height: 250px;
     overflow: visible;
+    border:none;
 }
 
 
@@ -969,7 +1082,7 @@ input[type="text" i], textarea{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    height: 57px;
+    height: 55px;
     overflow: hidden;
 }
 
@@ -1157,6 +1270,58 @@ strong{
 }
 
 
+
+ /*?     show more       */
+
+ .show_more{
+    width: 165px; 
+    margin-inline: auto;
+    text-align: center;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    background-color: #8080802e;
+    border-radius: 3.5px;
+    border: 0.1px solid #ffffff6b; ;
+}
+
+.show_more:hover {
+  background-color: rgb(0 0 0 / 15%);
+  transition: all 1s;
+}
+
+.show_more:hover .fas {
+    transform: rotate(90deg);
+    transition: transform 1s;
+}
+
+
+.show_more i {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    transform: rotate(0);
+    transition: transform .6s;
+} 
+  
+.show_more p{
+    margin: 0;
+    display: inline-block;
+}
+  
+  
+  
+.show_down i{
+  transform: rotate(180deg)!important;
+  transition: transform .6s;
+}
+.show_down .separador {
+  border-top: 0;
+}
+
+
+.page-footer .title {
+    font-weight: 100;
+}
   
   @media screen and (max-width: 780px){
 
@@ -1275,6 +1440,9 @@ strong{
     .nav_fixed .menu_item,.nav_js .menu_item{
         text-shadow: none;
     }
+    .ads{
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.01) 100%), url(../img/ads_bg.jpg);
+    }
     
 }
 
@@ -1310,6 +1478,7 @@ strong{
     }
     .contact_area{
         flex: 100%;
+        padding: 0 10px;
     }
     .contact_form{
         flex: 100%;
@@ -1359,17 +1528,3 @@ strong{
 }
 
 
-/* 
-
-#section_tour .card_ico:before {
-    content: "";
-    background-image: url(); 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-  }
- */

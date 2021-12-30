@@ -234,6 +234,9 @@ input[type="text" i], textarea{
 .nav_fixed .header_nav{
     position: relative;
 }
+.social-nav {
+    padding: 20px 0;
+}
 
 
 /*? media query */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,15 @@
     <link rel="stylesheet" href="./css/style-viajes.css">
     <link rel="stylesheet" href="./css/scrollbar.css">
     <!--<link rel="stylesheet" href="./css/nav.css">-->
-    <link rel="shortcut icon" type="image/png" href="./img/sunrise.png"/>
+    <link rel="shortcut icon" type="image/png" href="./img/sunrise.png" />
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/0dc279f0cd.js" crossorigin="anonymous"></script>
+    <script src="./js/slider.js" defer></script>
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/style-viajes.css">
     <title>Viajecitos - Viaje</title>
 </head>
+
 <body class="page_viajes">
     <header id="top">
         <div class="header_nav">
@@ -21,9 +25,9 @@
                 <div class="logo"><a href="./index.html">Viajecitos</a></div>
                 <ul class="main_menu" id="nav_menu">
                     <li class="menu_item"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="menu_item" ><a href="./viajes.html">Viajes</a></li>
-                    <li class="menu_item" ><a href="#">Oficinas</a></li>
-                    <li class="menu_item contact" ><a href="./contacto.html">Contacto</a></li>
+                    <li class="menu_item"><a href="./viajes.html">Viajes</a></li>
+                    <li class="menu_item"><a href="#">Oficinas</a></li>
+                    <li class="menu_item contact"><a href="./contacto.html">Contacto</a></li>
                 </ul>
                 <a class="btn_contacto" href="./contacto.html"><button>Contacto</button></a>
                 <div class="burger_container">
@@ -39,298 +43,521 @@
         </div>
         <div class="hero_img">
             <div class="hero_text">
-                    <div class="hero_content">
-                            <h1 class="hero_title">Empieza armar tu viaje</h1>
-                            <h2>conoce nuestro planes</h2>
-                    </div>
-    <div class="search_container">
-                        <input class="search_bar" type="text" placeholder="Encuentra tu destino..." name="search">
-                        <button class="search_btn" type="submit">buscar</button>
-                   </div>
+                <div class="hero_content">
+                    <h1 class="hero_title">Empieza armar tu viaje</h1>
+                    <h2>conoce nuestro planes</h2>
+                </div>
+                <div class="search_container">
+                    <input class="search_bar" type="text" placeholder="Encuentra tu destino..." name="search">
+                    <button class="search_btn" type="submit">buscar</button>
+                </div>
             </div>
         </div>
     </header>
-<style>
+    <style>
 
 
 
-</style>
+    </style>
     <main class="body_main">
 
 
-<div id='cards' class="card_section">
-    <h2 class="title_cards row">Nuestros viajes para usted</h2>
-    <br>        
-        <div class="cards_container row">
-            <div class="card_grid">
-                <div class="card_image f1"></div>
-                <div class="card_text">
-                    <h3>NUEVA YORK - 200 USD</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
+        <div id='card_section' class="section_container">
+            <!-- <h2 class="title_cards row">Nuestros viajes para usted</h2>
+            <br> -->
+            <div class="section_title">
+                <h2>Nuestros viajes para usted</h2>
+                <p>Destinos especiales y exoticos, con nuestro catalago de mas
+                    de 50 destinos
+                </p>
             </div>
-            <div class="card_grid">
-                <div class="card_image f2"></div>
-                <div class="card_text">
-                    <h3>TOKYO - 200 USD</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+            <div class="cards_container row">
+                <div class="card_grid">
+                    <div class="card_image img">
+                        <img src="./img/image-card-1.jpg">
+                    </div>
+                    <div class="card_text">
+                        <h3>NUEVA YORK</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                        <h3>$200</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="card_btn">
+                        <button class="btn_hover bn18">Comprar</button>
+                    </div>
                 </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
+                <div class="card_grid">
+                    <div class="card_image img">
+                        <img src="./img/image-card-2-temporal.jpg">
+                    </div>
+                    <div class="card_text">
+                        <h3>TOKYO</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                        <h3>$200</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="card_btn">
+                        <button class="btn_hover bn18">Comprar</button>
+                    </div>
                 </div>
-            </div>
-            <div class="card_grid">
-                <div class="card_image f3"></div>
-                <div class="card_text">
-                    <h3>BARCELONA - 200 USD</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                <div class="card_grid">
+                    <div class="card_image img">
+                        <img src="./img/image-card-3-barcelona.jpg">
+                    </div>
+                    <div class="card_text">
+                        <h3>BARCELONA</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                        <h3>$200</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="card_btn">
+                        <button class="btn_hover bn18">Comprar</button>
+                    </div>
                 </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
-            </div>
-            <div class="card_grid">
-                <div class="card_image f4"></div>
-                <div class="card_text">
-                    <h3>EL CAIRO - 300 USD</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
-            </div>
-        </div>
-</div>        
-
-<br>
-<br>
-<div class="cards_container row hidden">
-    <div class="card_grid">
-        <div class="card_image f5"></div>
-        <div class="card_text">
-            <h3>ISLA DE PASCUA - 450 USD</h3>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-        </div>
-        <div class="card_btn">
-            <button class="btn_hover bn18">Comprar</button>
-        </div>
-    </div>
-    <div class="card_grid">
-        <div class="card_image f6"></div>
-        <div class="card_text">
-            <h3>MOSCÚ - 280 USD</h3>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-        </div>
-        <div class="card_btn">
-            <button class="btn_hover bn18">Comprar</button>
-        </div>
-    </div>
-    <div class="card_grid">
-        <div class="card_image f7"></div>
-        <div class="card_text">
-            <h3>BHUTAN- 320 USD</h3>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-        </div>
-        <div class="card_btn">
-            <button class="btn_hover bn18">Comprar</button>
-        </div>
-    </div>
-    <div class="card_grid">
-        <div class="card_image f8"></div>
-        <div class="card_text">
-            <h3>DUBAI - 400 USD</h3>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-        </div>
-        <div class="card_btn">
-            <button class="btn_hover bn18">Comprar</button>
-        </div>
-    </div>
-</div>
-<div class="separador">
-    <div class="btn_mas btn_hover bn18">mostrar mas</div>
-</div>
-
-
-  <!-- ADS --> 
-
-  <section id="section_media" class="section_container ads">
-    <div class="container row">
-        <div class="media flex" loading="lazy">
-            <div class="media_img md_bg"></div>
-            <div class="media_content">
-                <h1 class="media_header">50% OFF</h1>
-                <h2>Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con nosotros.</h2>
-                <p>Con su primera compra en el sitio tendra 15% en los hoteles y guias turisticas en los destinos que eliga.<p>
-                  <br> 
-            </div>
-        </div>
-    </div>
-</section>      
-
-
-        <h2 class="title_cards row">Los mejores hoteles</h2>
-        <br>
-        <div class="cards_container row">
-            <div class="card_grid">
-                <div class="card_image f9"></div>
-                <div class="card_text">
-                    <h3>Citizenm New York Times Square</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
-            </div>
-            <div class="card_grid">
-                <div class="card_image f10"></div>
-                <div class="card_text">
-                    <h3>Hotel Niwa Tokyo</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
-            </div>
-            <div class="card_grid">
-                <div class="card_image f11"></div>
-                <div class="card_text">
-                    <h3>Catalonia Ramblas</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
-                </div>
-            </div>
-            <div class="card_grid">
-                <div class="card_image f12"></div>
-                <div class="card_text">
-                    <h3>Ramses Hilton</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
-                </div>
-                <div class="card_btn">
-                    <button class="btn_hover bn18">Comprar</button>
+                <div class="card_grid">
+                    <div class="card_image img">
+                        <img src="./img/egy_box2.jpg">
+                    </div>
+                    <div class="card_text">
+                        <h3>EL CAIRO</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                        <h3>$300</h3>
+                        <div class="stars">
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star checked" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                            <span class="fa fa-star" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="card_btn">
+                        <button class="btn_hover bn18">Comprar</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
+        <div id='card_section' class="section_container">
         <div class="cards_container row hidden">
             <div class="card_grid">
-                <div class="card_image f13"></div>
+                <div class="card_image img">
+                    <img src="./img/cl_box4.jpg">
+                </div>
                 <div class="card_text">
-                    <h3>Hotel National, a Luxury Collection Hotel, Moscow</h3>
+                    <h3>ISLA DE PASCUA</h3>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$450</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
                 </div>
                 <div class="card_btn">
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card_grid">
-                <div class="card_image f14"></div>
+                <div class="card_image img">
+                    <img src="./img/rus_box3.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>MOSCÚ</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$280</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/destino_bg2.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>BHUTAN</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$320</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/destino_bg6.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>DUBAI</h3>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$400</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="separador">
+            <!-- <div class="btn_mas btn_hover bn18">mostrar mas</div> -->
+            <div class="show_more">
+            <i class="fas fa-chevron-up"></i><p>Mostrar mas</p>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- ADS Slider -->
+
+        <section id="section_media" class="section_container ads">
+            <div class="slideshow-container">
+                <div class="slides fade ads_bg1">
+                    <div class="container row">
+                        <div class="media flex" loading="lazy">
+                            <div class="media_img md_bg"></div>
+                            <div class="media_content">
+                                <h1 class="media_header">50% OFF</h1>
+                                <h2>Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con
+                                    nosotros.</h2>
+                                <p>Con su primera compra en el sitio tendra 15% en los hoteles y guias turisticas en los
+                                    destinos que eliga.
+                                <p>
+                                    <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slides fade ads_bg2">
+                    <div class="container row">
+                        <div class="media flex" loading="lazy">
+                            <div class="media_img md_bg"></div>
+                            <div class="media_content">
+                                <h1 class="media_header">Open your Word</h1>
+                                <h2>Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con
+                                    nosotros.</h2>
+                                <p>Con su primera compra en el sitio tendra 15% en los hoteles y guias turisticas en los
+                                    destinos que eliga.
+                                <p>
+                                    <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slides fade ads_bg3">
+                    <div class="container row">
+                        <div class="media flex" loading="lazy">
+                            <div class="media_img md_bg"></div>
+                            <div class="media_content">
+                                <h1 class="media_header">Discorverd you road</h1>
+                                <h2>Desde el 15 al 31 de octubre tendrá un 50% de descuento en su primer viaje con
+                                    nosotros.</h2>
+                                <p>Con su primera compra en el sitio tendra 15% en los hoteles y guias turisticas en los
+                                    destinos que eliga.
+                                <p>
+                                    <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="dot_container">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+
+          <div id='card_section' class="section_container">
+        <!-- <h2 class="title_cards row">Los mejores hoteles</h2> -->
+        <div class="section_title">
+            <h2>Los mejores hoteles</h2>
+            <p>Destinos especiales y exoticos, con nuestro catalago de mas
+                de 50 destinos
+            </p>
+        </div>
+        <div class="cards_container row">
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/nyc_hotel.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>Citizenm</h3>
+                    <div class="sub_text">New York, Times Square</div>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3>$500</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/jp_hotel.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>Hotel Niwa</h3>
+                    <div class="sub_text">Tokyo</div>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$600</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/esp_hotel.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>Catalonia Ramblas</h3>
+                    <div class="sub_text">...</div>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$700</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>                
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/egy_hotel.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>Ramses Hilton</h3>
+                    <div class="sub_text">...</div>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$900</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id='card_section' class="section_container">
+        <div class="cards_container row hidden">
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/rus_hotel.jpg">
+                </div>
+                <div class="card_text">
+                    <h3>Hotel National</h3>
+                    <div class="sub_text">a Luxury Collection Hotel, Moscow</div>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$400</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="card_btn">
+                    <button class="btn_hover bn18">Comprar</button>
+                </div>
+            </div>
+            <div class="card_grid">
+                <div class="card_image img">
+                    <img src="./img/eua_hotel.jpg">
+                </div>
                 <div class="card_text">
                     <h3>Jumeirah Emirates Towers</h3>
+                    <div class="sub_text">...</div>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$200</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
                 </div>
                 <div class="card_btn">
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card_grid">
-                <div class="card_image f15"></div>
+                <div class="card_image img">
+                    <img src="./img/irl_hotel.jpg">
+                </div>
                 <div class="card_text">
-                    <h3>Maldron Hotel - Parnell Square</h3>
+                    <h3>Maldron Hotel</h3>
+                    <div class="sub_text">Parnell Square</div>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$600</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
                 </div>
                 <div class="card_btn">
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
             <div class="card_grid">
-                <div class="card_image f16"></div>
+                <div class="card_image img">
+                    <img src="./img/arg_hotel.jpg">
+                </div>
                 <div class="card_text">
                     <h3>Mirador del Lago Hotel</h3>
+                    <div class="sub_text">...</div>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, assumenda?</p>
+                    <h3>$600</h3>
+                    <div class="stars">
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star checked" aria-hidden="true"></span>
+                        <span class="fa fa-star" aria-hidden="true"></span>
+                    </div>
                 </div>
                 <div class="card_btn">
                     <button class="btn_hover bn18">Comprar</button>
                 </div>
             </div>
         </div>
-
         <div class="separador">
-            <div class="btn_mas btn_hover bn18">mostrar mas</div>
+            <!-- <div class="btn_mas btn_hover bn18">mostrar mas</div> -->
+            <div class="show_more">
+            <i class="fas fa-chevron-up"></i><p>Mostrar mas</p>
+            </div>
         </div>
-
+        </div>
     </main>
-    <script>
-
-
-
-
-    </script>
-<footer class="page-footer">
-    <div class="flex row">
-        <div class="contact_area">
+    <footer class="page-footer">
+        <div class="flex row">
+            <div class="contact_area">
                 <div class="contact-header">
-                    <h2>Nuestros Contactos</h2>
+                    <h3 class="title">Nuestros Contactos</h3>
                     <p class="item_desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting has been the industry's.
                     </p>
                 </div>
 
-            <div class="contact_body">
-                <ul class="contact_main">
-                    <li class="contact_item">
-                        <div class="contact_icon">
-                            <a class='fab fa-whatsapp' href="#" target="_blank"></a>
-                        </div>
-                        <div class="item_desc">Whatsapp: 15111-111</div>
-                    </li>
-                    <li class="contact_item">
-                        <div class="contact_icon">
-                            <a class='fab fa-github' href="#" target="_blank"></a>
-                        </div>
-                        <div class="item_desc">Github: dank01az</div>
-                    </li>
-                    <li class="contact_item">
-                        <div class="contact_icon">
-                            <a class='fa fa-twitter' href="#" target="_blank"></a>
-                        </div>
-                        <div class="item_desc">Twiter: @little_turtle</div>
-                    </li>
+                <div class="contact_body">
+                    <ul class="contact_main">
+                        <li class="contact_item">
+                            <div class="contact_icon wpp fa-ico">
+                                <!-- <a class='fab fa-whatsapp' href="#" target="_blank"></a> -->
+                            </div>
+                            <div class="item_desc">Whatsapp: 15111-111</div>
+                        </li>
+                        <li class="contact_item">
+                            <div class="contact_icon git fa-ico">
+                                <!-- <a class='fab fa-github' href="#" target="_blank"></a> -->
+                            </div>
+                            <div class="item_desc">Github: dank01az</div>
+                        </li>
+                        <li class="contact_item">
+                            <div class="contact_icon twt fa-ico">
+                                <!-- <a class='fa fa-twitter' href="#" target="_blank"></a> -->
+                            </div>
+                            <div class="item_desc">Twiter: @little_turtle</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h3 class="title">Sucursales</h3>
+                <div class="form-content">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.230994586465!2d-58.3669298!3d-34.6027012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1634236669790!5m2!1ses-419!2sar"
+                        width="100%" height="295" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="main_menu row" style="padding: 0;">
+                <ul class="main_nav" style="font-size: 14px;font-weight: normal;">
+                    <li class="menu_item"><a href="./nosotros.html">Nosotros</a></li>
+                    <li class="menu_item"><a href="./viajes.html">Viajes</a></li>
+                    <li class="menu_item"><a href="#">Oficinas</a></li>
+                    <li class="menu_item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                <ul class="social-nav">
+                    <li class="menu_item"><a class='fb fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='twt fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='pin fa-ico' href="#" target="_blank"></a></li>
+                    <li class="menu_item"><a class='ig fa-ico' href="#" target="_blank"></a></li>
                 </ul>
             </div>
         </div>
-        <div class="contact_form">
-            <h2 class="title">Sucursales</h2>
-            <div class="form-content">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.230994586465!2d-58.3669298!3d-34.6027012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2cb41df4e2abe065!2sGoogle!5e0!3m2!1ses-419!2sar!4v1634236669790!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div> 
-        </div>
-    </div>
-<div class="nav-footer">
-    <div class="main_menu row" style="padding: 0;">
-        <ul class="main_nav" style="font-size: 14px;font-weight: normal;">
-            <li class="menu_item"><a href="./nosotros.html">Nosotros</a></li>
-            <li class="menu_item" ><a href="./viajes.html">Viajes</a></li>
-            <li class="menu_item" ><a href="#">Oficinas</a></li>
-            <li class="menu_item" ><a href="./contacto.html">Contacto</a></li>
-        </ul>
-        <ul class="social-nav">
-            <li class="menu_item"><a class='fa fa-facebook' href="#" target="_blank"></a></li>
-            <li class="menu_item"><a class='fa fa-twitter' href="#" target="_blank"></a></li>
-            <li class="menu_item"><a class='fa fa-pinterest' href="#" target="_blank"></a></li>
-            <li class="menu_item"><a class='fa fa-instagram' href="#" target="_blank"></a></li>
-        </ul>
-    </div>
-</div>
 
-</footer>
-    <div class="back_top" onclick="back_top()">
-        <i class="fas fa-chevron-up"></i>
+    </footer>
+    <div class="back_top">
     </div>
 </body>
+
 </html>

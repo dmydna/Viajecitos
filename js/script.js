@@ -1,23 +1,19 @@
-
-
-
-
   let pageLoaderHTML = `
 <div id="pageloader">
   <div class="loading">
       <div class="loading-logo">
-          <h1>Viajecitos</h1>
+          <img src="./img/logo.png">
       </div>
       <div class="loading-dots">
-          <div class="dot"></div>
+          <div class="dot1"></div>
           <div class="dot2"></div>
           <div class="dot3"></div>
       </div>
   </div>
-</div>` ;
+</div>`;
 
 
-function page_load() {
+function page_load(){
   var page_con = document.body
   page_con.insertAdjacentHTML("afterbegin", pageLoaderHTML);
   document.body.classList.add('load_active')
@@ -63,13 +59,19 @@ function scrollFunction() {
     }
 }
 
-function back_top(){
+
+/** Back_to_top **/
+
+
+let back_top = document.querySelector('.back_top');
+
+back_top.addEventListener("click", function(){
     document.body.scrollTop = '0';
     document.documentElement.scrollTop = '0';
-}
+});
 
 
-/** Navscroll up */
+/* Navscroll up */
 
 var prevScrollpos = window.pageYOffset;
 
@@ -115,12 +117,102 @@ function navbarColor(){
 let page_viajes = document.querySelector('.page_viajes')
 if (page_viajes){
   console.log('pagina de viajes')
-  let btn_mas = document.querySelectorAll('.btn_mas'),
+  let btn_mas = document.querySelectorAll('.show_more'),
+      btn_mas_p= document.querySelectorAll('.show_more p'),
   hidden = document.querySelectorAll('.hidden');
   for (let i = 0; i < btn_mas.length; i++) {
        btn_mas[i].addEventListener('click', function(){    
        hidden[i].classList.toggle('toggle_hidden');
+       btn_mas[i].classList.toggle('show_down');
+
+     if (btn_mas_p[i].innerHTML === "mostrar mas"){
+      } else {
+        btn_mas_p[i].innerHTML = "mostrar mas";6
+      }
   });
   }
 }
+
+
+// SliderShow
+
+var slideIndex = 0, 
+    slider = document.querySelector('.slideshow-container')
+
+if (slider){
+  showSlides();
+}
+
+function showSlides() {  
+  let i,
+  slides = document.querySelectorAll(".slides"),
+  dots = document.querySelectorAll(".dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); 
+}
+
+
+
+
+// Experimento
+
+
+// ico = "ico";
+// about_us = "nosotros_bg";
+// plans = "verano_";
+// destino = "destino_bg";
+// recorridos = ""
+
+
+// function IMG_constructor(a,b){
+//   let id = document.querySelectorAll(a);
+//   let img = b
+//      for( let i=0 ; i < id.length ; i++){
+//           id[i].classList.remove(`${img}${i}`);
+//           // id[i].style.backgroundImage = `url(./img/${img[i]}.jpg)`;
+//           // id[i].style.backgroundImage = `url(./img/${img}${i+1}.jpg)`
+//      }
+// }
+
+// IMG_constructor('#section_end .card_ico',ico);
+// IMG_constructor("#section_us .card_ico", about_us);
+// IMG_constructor("#section_plans .card_ico", plans);
+
+var styleElem = document.head.appendChild(document.createElement("style"));
+styleElem.classList.add('css_viajecitos')
+styleElem.innerHTML = `
+#section_newsletter::after {
+  content: "";
+  position: absolute;
+  display: block; 
+  top: 0;
+  left: 0px;
+  width: 150px;
+  height: 100%;
+  background-image: url(./img/noel.png);
+  z-index: 8;
+  background-size: cover;
+  }
+#section_newsletter{position:relative}
+@media screen and (max-width: 780px){
+#section_newsletter::after{
+display:none}
+}`;
+
+
+
+
+
+
+
 
