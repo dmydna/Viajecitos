@@ -516,16 +516,16 @@ footer .main_nav, .nav-footer{
 /*?      social nav      */
 
 .social-nav a{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 
 .social-nav .menu_item {padding: 0 2px 0;}
 
 .social-nav .fa-ico {
-    background-color: white;
+    background-color: #7e7e7e1f;
     border-radius: 100%;
 }
 
@@ -1270,7 +1270,6 @@ strong{
 }
 
 
-
  /*?     show more       */
 
  .show_more{
@@ -1323,6 +1322,8 @@ strong{
     font-weight: 100;
 }
   
+
+
   @media screen and (max-width: 780px){
 
     .main_menu{
@@ -1381,7 +1382,9 @@ strong{
         text-transform: uppercase;
         font-weight: bold;
     }
-
+    footer .menu_item{
+        font-weight: 100;
+    }
     .logo{
         display: initial;
         margin-left: 10px;
@@ -1443,6 +1446,11 @@ strong{
     .ads{
         background-image: linear-gradient(to right,rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.01) 100%), url(../img/ads_bg.jpg);
     }
+/* Newsletter */    
+.news_content,.news_header{
+	flex: 100%;
+	text-align: center;
+}
     
 }
 
@@ -1526,5 +1534,7 @@ strong{
         display: none;
     }
 }
+
+
 
 

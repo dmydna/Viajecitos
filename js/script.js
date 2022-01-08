@@ -2,7 +2,7 @@
 <div id="pageloader">
   <div class="loading">
       <div class="loading-logo">
-          <img src="./img/logo.png">
+          <img src="./img/Logo.png">
       </div>
       <div class="loading-dots">
           <div class="dot1"></div>
@@ -191,23 +191,17 @@ function showSlides() {
 var styleElem = document.head.appendChild(document.createElement("style"));
 styleElem.classList.add('css_viajecitos')
 styleElem.innerHTML = `
-#section_newsletter::after {
-  content: "";
-  position: absolute;
-  display: block; 
-  top: 0;
-  left: 0px;
-  width: 150px;
-  height: 100%;
-  background-image: url(./img/noel.png);
-  z-index: 8;
-  background-size: cover;
-  }
-#section_newsletter{position:relative}
-@media screen and (max-width: 780px){
-#section_newsletter::after{
-display:none}
-}`;
+.nav-footer {
+  background-color: #00000045; 
+}
+.social-nav .fa-ico{
+  background-color: #00000033;    
+}
+.social-nav .fa-ico:hover {
+  background: var(--primary)!important;
+  color: white;
+}
+`;
 
 
 
