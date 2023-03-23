@@ -70,48 +70,6 @@ back_top.addEventListener("click", function(){
     document.documentElement.scrollTop = '0';
 });
 
-
-/* Navscroll up */
-
-var prevScrollpos = window.pageYOffset;
-
-function prev_navbar(){ 
-  var currentScrollPos = window.pageYOffset;
-  if(currentScrollPos > headerCnHeight){
-     navbar_scrollUp() 
-    } 
-  }
-
-function navbar_scrollUp() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".header_nav").style.top = "0";
-  } else {
-    document.querySelector(".header_nav").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
-/* Nav-color */
-
-let header_nav = document.querySelector('.header_nav'),
-    headerHeight = header_nav.clientHeight,
-    HeaderCn = document.querySelector('header'),
-    headerCnHeight = HeaderCn.clientHeight,
-    altoDeScroll = document.documentElement.scrollTop;
-    document.body.classList.add("nav_fixed")
-
-function navbarColor(){
-     let scroll_top = document.documentElement.scrollTop;
-    if ( scroll_top > 58) {
-        //scroll_top > headerCnHeight - 58
-        document.body.classList.add("nav_js");
-      }
-    else{  
-        document.body.classList.remove("nav_js")
-    }
-}
-
 /*? viajes.html */
 
 let page_viajes = document.querySelector('.page_viajes')
