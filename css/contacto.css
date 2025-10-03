@@ -165,14 +165,14 @@ body{
 
 .contacto .fixrow{
     max-width: 1100px;margin: 0 auto 0;
+    align-items: center;
 }
 .contacto .btn_contacto button {
     line-height: initial;
 }
-.header_nav{
-    background-color: white;
-    color: black;
-    position: relative;
+
+.nav_fixed .main {
+    padding-top: 130px!important ;
 }
 
 .burger_svg {
@@ -225,17 +225,14 @@ main{position: relative;}
 .css_fix .nav-footer{
     line-height: 68px;
 }
-header a {
-    color: black!important;
-}
+
 input[type="text" i], textarea{
     color: black;
 }
-.nav_fixed .header_nav{
-    position: relative;
-}
+
 .social-nav {
     padding: 20px 0;
+    margin: 0;
 }
 
 
